@@ -1071,9 +1071,29 @@ button.social img{
         margin: 0;
         
     }
+
+    #sidebar{
+        display: none;
+    }
     .f-container{
         width: 100% !important;
         margin-left: 376px;
+    }
+
+    .button-toggle{
+       display: block; 
+   }
+    .sidebar-close{
+        display: inline-block;
+        position: relative;
+        margin-left: 2rem;
+    }
+
+    .sidebar-close a{
+        position: absolute;
+        top: 4px;
+        left: -19px;
+        color: #6d7fcc;
     }
     #sidebar .sidebar-header .header-menu{
         margin-right: 10px;
@@ -1227,6 +1247,9 @@ button.social img{
       
         font-size: 20px;
   
+    }
+    .c-select{
+        width:100%;
     }
 
     .top-text{
