@@ -805,6 +805,9 @@ button.social img{
     body{
         font-size: .8rem;
     }
+    #sidebar{
+        height: 100%;
+    }
 
     .user-component .box-content{
        
@@ -837,7 +840,7 @@ button.social img{
     }
 
     .control-btn button{
-        margin-right: 2px;
+        margin-right: -2px !important;
     }
     .ui-fooer {
         margin-left: -10px !important;
@@ -877,6 +880,7 @@ button.social img{
         position: fixed;
         min-width: 100%;
         max-width: 100%;
+        height: 100%;
     }
 
     main{
@@ -947,6 +951,7 @@ button.social img{
     }
     #sidebar{
         display: none;
+        height: 100%;
     }
     .button-toggle{
        display: block;
@@ -1101,23 +1106,29 @@ button.social img{
         height: 864px
     }
 }
-@media (min-height: 900px) {
+@media (max-height: 900px) {
     #sidebar{
         height: 900px
     }
 }
-@media (min-height: 1080px) {
+@media (max-height: 950px) {
     #sidebar{
-        height: 1080px
+        height: 950px
     }
 }
-@media (min-height: 1080px) {
+@media (max-height: 1050px) {
     #sidebar{
-        height: 1080px
+        height: 1050px
     }
 }
-@media (min-height: 1080px) {
+
+@media (max-height: 1080px) {
     #sidebar{
-        height: 1080px
+        height: 1080px;
+    }
+}
+@media (max-height: 1200px) {
+    #sidebar{
+        height: 1200px;
     }
 }
