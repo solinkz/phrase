@@ -206,9 +206,10 @@ main{
 .category button.logout-btn{
     position: relative;
     padding: 12px 20px;
+    background-color: #d6d6d6;
 }
 .category button.logout-btn:hover{
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.055), 0 6px 12px rgba(0, 0, 0, 0.137);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.192), 0 6px 12px rgba(0, 0, 0, 0.377);
 }
 
 .category button.logout-btn img{
@@ -459,6 +460,10 @@ background:#406fe0;
 
 }
 
+.f-container{
+    width: 100% !important;
+    margin-left: 280px;
+}
 .button-toggle{
     display:none;
     width: 100%;
@@ -473,13 +478,14 @@ background:#406fe0;
 }
 .user-card-component .box-card{
     border-radius: 12px;
-    padding: 5rem;
+    padding: 4rem;
     background: #fff;
+    display: -webkit-inline-box;
 }
 /* -USER CARD */
 
 .user-card .img-cont{
-    width: 350px;
+    width: 300px;
     margin: 0 auto;
     
 }
@@ -496,10 +502,10 @@ background:#406fe0;
    margin-right: 1px;
 }
 .user-card .control-btn button.btn{
-    padding: .3rem .6rem; 
+    padding: .3rem .2rem; 
 }
 .user-card .control-btn button.btn span{
-    font-size: 14px;
+    font-size: 12px;
 }
 /* .user-card .control-btn button.btn-circle.btn-lg{
     width: 40px;
@@ -521,11 +527,11 @@ background:#406fe0;
 }
 .i-icon{
     position: absolute;
-    bottom: 15px;
-    right: 10px;
+    bottom: 12px;
+    right: 20px;
 } 
 
-.card-info{
+.hidden-info{
     display: none;
 }
 
@@ -569,7 +575,7 @@ background:#406fe0;
     /* text-align: center; */
 }
 .social-info{
-    padding: 1rem;
+    padding: 1rem 0;
 }
 
 
@@ -699,6 +705,13 @@ button.social img{
 /* ---------------------------------------------------
     HELPERS STYLE
 ----------------------------------------------------- */
+
+.pr-0{
+    padding-right: 0 !important;
+}
+.pl-0{
+    padding-right: 0 !important;
+}
 
 .text-theme{
     color: #0f2862 !important;
@@ -933,16 +946,39 @@ button.social img{
     main{
         margin-left: 0  !important;
     }
+    .category button.logout-btn img{
+        position: absolute;
+        top: 12px;
+        left: 32%;
+    }
+    .f-container{
+        margin-left: 0 !important;
+    }
     #sidebar{
         height: 100%;
     }
-
+    .user-card-component .box-card {
+        border-radius: 12px;
+        padding: 1rem;
+        background: #fff;
+        display: block;
+    }
     .user-component .box-content{
        
         padding:1rem 2rem;
     }
     .user-card .img-cont{
         width: 278px;
+    }
+
+    .user-card .control-btn button{
+         margin-right: 0px;
+    }
+    .user-card .control-btn button.btn{
+        padding: .2rem ; 
+    }
+    .user-card .control-btn button.btn span{
+        font-size: 12px;
     }
     .user-info .img img{
         max-width: 220px !important;
@@ -999,6 +1035,7 @@ button.social img{
         font-size: 12px !important;
         padding: 4px 16px;
     }
+   
 }
 
 
@@ -1018,6 +1055,9 @@ button.social img{
         min-width: 100%;
         margin: 0;
         
+    }
+    .f-container{
+        margin: 0;
     }
     #sidebar .sidebar-header .header-menu{
         margin-right: 10px;
@@ -1074,7 +1114,7 @@ button.social img{
     }
 
    .button-toggle{
-       display: block;
+       display: block; 
    }
 }
 
@@ -1083,6 +1123,7 @@ button.social img{
         min-width: 100%;
         margin-left: 400px;
     }
+
     #sidebar{
         height: 100%;
     }
@@ -1161,6 +1202,10 @@ button.social img{
         
     }
 
+    .f-container{
+        margin-left: 380px;
+    }
+
     main{
         margin-left: 500px;
     }
@@ -1220,9 +1265,9 @@ button.social img{
         font-size: 16px;
     }
     .goal-info .about-btn button {
-        margin: 4px 2px;
-        font-size: 14px !important;
-        padding: 4px 16px;
+        margin: 4px 1px;
+        font-size: 12px !important;
+        padding: 4px 10px;
     }
 
 
