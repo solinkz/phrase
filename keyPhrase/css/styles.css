@@ -979,13 +979,13 @@ button.social img{
     }
 
     .user-card .control-btn button{
-         margin-right: 0px;
+         margin-right: 3px;
     }
     .user-card .control-btn button.btn{
-        padding: .2rem ; 
+        padding: .1rem .2rem ; 
     }
     .user-card .control-btn button.btn span{
-        font-size: 12px;
+        font-size: 10px;
     }
     .user-info .img img{
         max-width: 220px !important;
