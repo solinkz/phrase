@@ -24,6 +24,16 @@
 </head>
 
 <body>
+    <div class="hidden-header">
+        <div class="button-toggle-head bg-white p-3 clearfix">
+            <span class="lead f-s-22">LOGO</span>
+            <div class="t-container float-right" id="toggle-switch-head">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+        </div>
+    </div>
     <div class="wrapper">
         <div class="row" style="margin-right: 0px; margin-left: -18px;">
             <div class="col-lg-3">
@@ -462,7 +472,6 @@
                 <main>
                 
                     <section id="content">
-                
                         <div class="button-toggle bg-white p-3 clearfix">
                             <span class="lead f-s-22">LOGO</span>
                             <div class="t-container float-right" id="toggle-switch">
@@ -471,6 +480,7 @@
                                 <div class="bar3"></div>
                             </div>
                         </div>
+                
                         <div class="container">
                             <!-- start row -->
                             <div class="row" style="margin-top: 50px;">
@@ -631,6 +641,11 @@
         $(document).ready(function () {
 
             $('#toggle-switch').on('click', function () {
+                $('#sidebar').toggleClass('active').toggle();
+               
+
+            });
+            $('#toggle-switch-head').on('click', function () {
                 $('#sidebar').toggleClass('active').toggle();
                
 

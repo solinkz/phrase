@@ -57,6 +57,10 @@ h3, h4, h5 {
     font-size: 14px;
 }
 
+.hidden-header{
+    display: none;
+}
+
 
 
 /* ---------------------------------------------------
@@ -944,9 +948,12 @@ button.social img{
     body{
         font-size: .8rem;
     }
-
+     .hidden-header{
+        display: none !important;
+    }
     main{
         margin-left: 0  !important;
+        padding-left: 0 !important;
     }
      #sidebar {
         display: none;
@@ -1068,21 +1075,26 @@ button.social img{
 
     main{
         min-width: 100%;
-        margin: 0;
-        
+        margin-left: 0 !important;
+        padding-left: 200px;
+       
     }
 
-    #sidebar{
-        display: none;
+    .hidden-header{
+        display: block;
     }
+    /* #sidebar{
+        display: none;
+    } */
     .f-container{
         width: 100% !important;
-        margin-left: 376px;
+        margin-left: 0;
     }
 
-    .button-toggle{
+    /* .button-toggle{
        display: block; 
-   }
+     
+   } */
     .sidebar-close{
         display: inline-block;
         position: relative;
