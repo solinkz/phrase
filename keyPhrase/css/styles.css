@@ -70,6 +70,9 @@ h3, h4, h5 {
 main{
     margin-left: 330px;
 }
+main.temp{
+    margin-left: 396px;
+}
 
 /* ---------------------------------------------------
     SIDEBAR STYLE
@@ -510,6 +513,14 @@ background:#406fe0;
 .f-container{
     width: 100% !important;
     margin-left: 280px;
+}
+.f-container-temp{
+    width: 100% !important;
+    margin-left: 0;
+}
+
+.temp-wrapper{
+    padding: 4rem;
 }
 .button-toggle{
     display:none;
@@ -994,7 +1005,14 @@ button.social img{
     }
     main{
         margin-left: 0  !important;
+        padding-left: 0 ;
+    }
+    main.temp{
+        margin-left: 0  !important;
         padding-left: 0 !important;
+    }
+    .temp-wrapper {
+        padding: 1.5rem !important;
     }
      #sidebar {
         display: none;
@@ -1124,6 +1142,9 @@ button.social img{
         padding-left: 200px;
        
     }
+    main.temp{
+        padding-left: 43px;
+    }
 
     .hidden-header{
         display: block;
@@ -1138,7 +1159,9 @@ button.social img{
     .f-container p{
         padding-left: 137px;
     }
-
+     .temp-wrapper {
+        padding: 2.5rem;
+    }
     /* .button-toggle{
        display: block; 
      
