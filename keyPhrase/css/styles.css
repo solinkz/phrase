@@ -3,7 +3,7 @@
 
 body {
     font-family: 'Josefin Sans', sans-serif;
-    background: #f3f6fd;
+    background: #ebf3ff;
     font-size: 1.2rem;
     color: #0f2862;
 }
@@ -87,7 +87,8 @@ main.temp{
     min-width: 330px;
     max-width: 330px;
     height: 100vh;
-    background: #f3f6fd;
+    /* background: #f3f6fd; */
+    background: #ebf3ff;;
     color: #0f2862;
     overflow-y: scroll;
     /* border-right: 2px solid #fff; */
