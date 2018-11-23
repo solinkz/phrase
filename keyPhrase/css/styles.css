@@ -781,6 +781,15 @@ button.social img{
 .text-blue{
     color: #4070e1;
 }
+.text-pink{
+    color: #e61c41;
+}
+.text-purple{
+    color: #9217b8;
+}
+.text-lemon{
+    color: #67e003;
+}
 .t-s-1{
     letter-spacing: 1px;
 }
@@ -1297,7 +1306,7 @@ button.social img{
         font-size: 14px !important;
         padding: 6px 18px;
     }
-
+    
    
 
 }

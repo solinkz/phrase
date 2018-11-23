@@ -76,6 +76,10 @@
     font-weight: 700;
 }
 
+.edit-btn{
+    display: none;
+}
+
 @media(max-width: 576px){
     .box-card{
         width: 100% !important;
