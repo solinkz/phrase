@@ -49,7 +49,7 @@
                             <!-- avatar image -->
                             <div class="col-2">
                     
-                                <img src="images/avatar.jpg" width="40" height="40" alt="avatar image" class="rounded-circle avatar">
+                                <img src="images/a4.jpg" width="40" height="40" alt="avatar image" class="rounded-circle avatar">
                             </div>
                     
                             <!-- icon menus -->
@@ -101,60 +101,60 @@
                     
                             <!-- category -->
                             <div class="category">
+                                
                                 <div class="cat-title">
-                                    Discovery Settings
+                                   My profile
                                 </div>
                                 <div class="cat-body clearfix">
-                                    <div class="box-link">
-                                        <a href="#">View My profile</a>
-                                        <span class="float-right">
-                                            <i class="fa fa-chevron-right"></i>
-                                        </span>
+                                    <!-- image -->
+                                    <div class="profile-img">
+                                        <div class="p-img">
+                                            <img src="images/a4.jpg" alt="avatar" class="img-responsive rounded-circle">
+                                            <span class="cam">
+                                                <button class="btn btn-circle bg-white shadow">
+                                                    <i class="fa fa-camera"></i>
+                                                </button>
+                                            </span>
+                                        </div>
                                     </div>
-                                    <div class="box-link">
-                                        <a href="#">Share my profile</a>
-                                        <span class="float-right">
-                                            <i class="fa fa-share-alt"></i>
-                                        </span>
+                                    <!-- end image -->
+
+                                    <div class="b-info">
+                                        <span class="b-name">Gabriel Bryne</span>
+                                        <br>
+                                        <span class="text-light b-loc">
+                                            <i class="fa map-marker-alt"></i>Los Angeles, CA</span>
                                     </div>
-                                    <div class="distance">
-                    
-                                        <label for="Distance">Maximum Distance
-                                            <span class="float-right">
-                                                <span id="distanceOutput">100</span> mi.</span>
+                                    <hr>
+                                    <!-- end profile image/info -->
+                                    <div class="position-relative mb-4">
+                                        
+                                        <label for="bday">
+                                            <span class="text-blue">My Birthday</span>
+                                            <span class="icon">
+                                                <i class="fa fa-pencil-alt"></i>
+                                            </span>
                                         </label>
-                    
-                                        <input type="range" min="1" max="150" value="50" class="range " id="distance">
+                                        <input type="text" name="bday" id="bday" placeholder="My Birdthday" Value="30 Jan, 2018">
                                     </div>
                                     <div class="c-select settings special">
-                                        <span class="label">My Current Location</span>
-                                        <select>
-                                            <option value="0">Los Angeles, CA</option>
-                                    
-                                        </select>
-                                    </div>
-                                    <!-- <div class="c-select settings special">
                                         <span class="label">Gender</span>
                                         <select>
                                             <option value="0">Male</option>
                                             <option value="0">Female</option>
                                     
                                         </select>
-                                    </div> -->
-                                    <div>
-                                        <label for="age" class="mt-2 d-block">Age
-                                    
-                                        </label>
-                                        <div class="mb-4 mt-3">
-                                    
-                                            <input type="hidden" class="range-slider" value="23,75" />
-                                        </div>                                                                       
-                                    
                                     </div>
-                                   
-                    
-                                    <div class="position-relative">
                                     
+                                    <!-- <div class="box-link">
+                                        <a href="#">View My profile</a>
+                                        <span class="float-right">
+                                            <i class="fa fa-chevron-right"></i>
+                                        </span>
+                                    </div> -->
+                                   
+                                    <div class="position-relative pt-2">
+                                        <span class="text-blue">My Email</span>
                                         <label for="email">
                                             <span class="icon">
                                                 <i class="fa fa-pencil-alt"></i>
@@ -162,213 +162,69 @@
                                         </label>
                                         <input type="email" name="email" id="email" placeholder="Change Email">
                                     </div>
-                                    <div class="position-relative mb-4">
-                                    
-                                        <label for="password">
+                                    <div class="position-relative pt-2">
+                                        <span class="text-blue">My Phone</span>
+                                        <label for="phone">
                                             <span class="icon">
                                                 <i class="fa fa-pencil-alt"></i>
                                             </span>
                                         </label>
-                                        <input type="password" name="password" id="password" placeholder="Change Password">
+                                        <input type="tel" name="tel" id="tel" placeholder="your phone number" value="+91 76542 23456">
                                     </div>
-                    
-                                </div>
-                    
-                            </div>
-                            <!-- end category -->
-                                <!-- category -->
-                                <div class="category">
-                                    <div class="cat-title">
-                                        Notification
-                                
+                                    <div class="position-relative pt-2">
+                                        <span class="text-blue">My Title</span>
+                                        <label for="title">
+                                            <span class="icon">
+                                                <i class="fa fa-pencil-alt"></i>
+                                            </span>
+                                        </label>
+                                        <input type="text" name="title" id="title" placeholder="your Title" value="Your Title">
                                     </div>
-                                    <div class="cat-body clearfix">
-                                        <p class="font-weight-bold text-blue">EMAIL NOTIFICATION</p>
-                                       <div class="box-link">
-                                            <span class="text-capitalize">New Matches</span>
-                                            
-                                            <label class="switch float-right">
-                                                <input type="checkbox" name="mentorship" id="mentorship">
-                                                <span class="slider round"></span>
-                                            </label>
-                                       </div>
-                                       <div class="box-link">
-                                            <span class="text-capitalize">messages</span>
-                                            
-                                            <label class="switch float-right">
-                                                <input type="checkbox" name="mentorship" id="mentorship">
-                                                <span class="slider round"></span>
-                                            </label>
-                                       </div>
-                                       <div class="box-link mb-3">
-                                            <span>Promotion: I want to receive news,<br> update and other from busy</span>
-                                            
-                                            <label class="switch float-right">
-                                                <input type="checkbox" name="mentorship" id="mentorship">
-                                                <span class="slider round"></span>
-                                            </label>
-                                       </div>
-                                        <p class="font-weight-bold text-blue">PUSH NOTIFICATION</p>
-                                       <div class="box-link">
-                                            <span class="text-capitalize">When someone likes me</span>
-                                            
-                                            <label class="switch float-right">
-                                                <input type="checkbox" name="mentorship" id="mentorship">
-                                                <span class="slider round"></span>
-                                            </label>
-                                       </div>
-                                       <div class="box-link">
-                                            <span class="text-capitalize">New Matches</span>
-                                            
-                                            <label class="switch float-right">
-                                                <input type="checkbox" name="mentorship" id="mentorship">
-                                                <span class="slider round"></span>
-                                            </label>
-                                       </div>
-                                       <div class="box-link">
-                                            <span>New user near join in</span>
-                                            
-                                            <label class="switch float-right">
-                                                <input type="checkbox" name="mentorship" id="mentorship">
-                                                <span class="slider round"></span>
-                                            </label>
-                                       </div>
-                                       <div class="box-link">
-                                            <span>Messages</span>
-                                            
-                                            <label class="switch float-right">
-                                                <input type="checkbox" name="mentorship" id="mentorship">
-                                                <span class="slider round"></span>
-                                            </label>
-                                       </div>
+                                    <div class="position-relative pt-2">
+                                        <span class="text-blue">My Industry</span>
+                                        <label for="Industry">
+                                            <span class="icon">
+                                                <i class="fa fa-pencil-alt"></i>
+                                            </span>
+                                        </label>
+                                        <input type="text" name="industry" id="industry" placeholder="your Industry" value="Your Industry">
                                     </div>
-                                
-                                </div>
-                                <!-- end category -->
-                    
-                    
-                            <!-- category -->
-                            <div class="category">
-                                <div class="cat-title">
-                                    Show me on
-                                    <label class="switch float-right">
-                                        <input type="checkbox" name="creative-collaboration" id="creative-collaboration">
-                                        <span class="slider round"></span>
-                                    </label>
-                    
-                                </div>
-                                <div class="cat-body clearfix">
-                                    <span class="t-s-1">while turned off, you will not be shown in the card stack. You can still see and chat with your matches</span>
-                                </div>
-                    
-                            </div>
-                            <!-- end category -->
-                    
-                    
-                     
-                            <!-- category -->
-                            <div class="category">
-                                <div class="cat-title">
-                                    Language
-                    
-                                </div>
-                                <div class="cat-body clearfix">
-                                    <div class="c-select special" style="width:100%;">
-                                        <span class="label">Language</span>
+                                    <div class="position-relative pt-2">
+                                        <span class="text-blue">My Goal</span>
+                                        <label for="Industry">
+                                            <span class="icon">
+                                                <i class="fa fa-pencil-alt"></i>
+                                            </span>
+                                        </label>
+                                        <input type="text" name="goal" id="goal" placeholder="your goal" value="Business">
+                                    </div>
+                                    <div class="position-relative pt-2">
+                                        <span class="text-blue">My Connection Idea</span>
+                                        <label for="Industry">
+                                            <span class="icon">
+                                                <i class="fa fa-pencil-alt"></i>
+                                            </span>
+                                        </label>
+                                        <input type="text" name="idea" id="idea" placeholder="your connection idea" value="Interests">
+                                    </div>
+                                  
+                                    <div class="c-select settings special">
+                                        <span class="label">My Current Location</span>
                                         <select>
-                                            <option value="0">English</option>
-                    
+                                            <option value="0">Los Angeles, CA</option>
+                                    
                                         </select>
                                     </div>
+                                  
+                                   
+                    
+                                   
                     
                                 </div>
                     
                             </div>
                             <!-- end category -->
-                    
-                            <!-- category -->
-                            <div class="category">
-                                <div class="cat-title">
-                                    Contact us
-                    
-                                </div>
-                                <div class="cat-body clearfix">
-                                    <a href="#">Help & Support</a>
-                    
-                                </div>
-                    
-                            </div>
-                            <!-- end category -->
-                    
-                            <!-- category -->
-                            <div class="category">
-                                <div class="cat-title">
-                                    Account
-                    
-                                </div>
-                                <div class="cat-body clearfix">
-                                    <a href="#">Restore Purchases</a>
-                    
-                                </div>
-                    
-                            </div>
-                            <!-- end category -->
-                    
-                            <!-- category -->
-                            <div class="category">
-                                <div class="cat-title">
-                                    Legal
-                    
-                                </div>
-                                <div class="cat-body clearfix">
-                                    <ul class="nav flex-column">
-                                        <li class="nav-item clearfix">
-                                            <span>Privacy</span>
-                                            <span class="eye float-right text-blue">
-                                                <a href="#">
-                                                    <i class="far fa-eye f-s-18"></i>
-                                                </a>
-                                            </span>
-                                        </li>
-                                        <li class="nav-item">
-                                            <span> Terms and Condition</span>
-                                            <span class="eye float-right text-blue">
-                                                <a href="#">
-                                                    <i class="far fa-eye f-s-18"></i>
-                                                </a>
-                                            </span>
-                                        </li>
-                                        <li class="nav-item">
-                                            <span>Cookie Policy</span>
-                                            <span class="eye float-right text-blue">
-                                                <a href="#">
-                                                    <i class="far fa-eye f-s-18"></i>
-                                                </a>
-                                            </span>
-                                        </li>
-                                        <li class="nav-item">
-                                            <span>Safety Tips</span>
-                                            <span class="eye float-right text-blue">
-                                                <a href="#">
-                                                    <i class="far fa-eye f-s-18"></i>
-                                                </a>
-                                            </span>
-                                        </li>
-                                        <li class="nav-item">
-                                            <span>Community Guidelines</span>
-                                            <span class="eye float-right text-blue">
-                                                <a href="#">
-                                                    <i class="far fa-eye f-s-18"></i>
-                                                </a>
-                                            </span>
-                                        </li>
-                    
-                                    </ul>
-                    
-                                </div>
-                    
-                            </div>
-                            <!-- end category -->
+                             
                     
                             <div class="category footer text-center mt-3">
                                 <div class="category-title text-center f-s-16">
@@ -410,300 +266,7 @@
                 
                         <div class="container">
                             <!-- start row -->
-                            <div class="row" style="margin-top: 30px;">
-                                <div class="temp-wrapper">
-                                    <div class="box user-card-component ">
-                                        <div class="box-card shadow-lg " >
-                                            <div class="img-wrapper">
-                                                <div class="profile-img">
-                                                    <div class="p-img">
-                                                        <img src="images/a4.jpg" alt="avatar" class="img-responsive rounded-circle">
-                                                        <span class="cam"><button class="btn btn-circle bg-white shadow"> <i class="fa fa-camera"></i></button></span>
-                                                    </div>
-                                                </div>
-                                                <div class="b-info">
-                                                    <span class="b-name">Gabriel Bryne</span><br>
-                                                    <span class="text-light b-loc"><i class="fa map-marker-alt"></i>Los Angeles, CA</span>
-                                                </div>
-                                            </div>
-                                            <div class="p-content">
-                                                <div class="row">
-                                                    <div class="col">
-                                                        <div class="row">
-                                                            <div class="col-md-6"> 
-                                                               
-                                                                <div class="detail">
-                                                                    <div class="row">
-                                                                        <div class="col-2">
-                                                                            <span class="icon-container">
-                                                                                <button class="btn btn-lg btn-circle bg-white shadow text-warning"><i class="fa fa-birthday-cake"></i></button>
-                                                                            </span>
-                                                                        </div>
-                                                                        <div class="col-10">
-                                                                            <div class="detail-type">
-                                                                                <span class="title text-light">My Birthday</span>
-                                                                                <span class="val">30 Jan, 2018</span>
-                                                                                <a href="#" class="btn btn-circle bg-white shadow float-right text-info edit-btn"><i class="fa fa-edit"></i></a>
-                                                                                <span class="float-right sec-val pr-3">26</span>
-                                                                               
-                                                                            
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>                                                                                                                                    
-
-                                                                </div>
-
-                                                              
-                                                            </div>
-                                                            <div class="col-md-6">
-                                                            <div class="detail">
-                                                                <div class="row">
-                                                                    <div class="col-2">
-                                                                        <span class="icon-container">
-                                                                            <button class="btn btn-lg btn-circle bg-white shadow text-info"><i class="fa fa-venus-mars"></i></button>
-                                                                        </span>
-                                                                    </div>
-                                                                    <div class="col-10">
-                                                                        <div class="detail-type">
-                                                                            <span class="title text-light">My Gender</span>
-                                                                            <span class="val">Male</span>
-                                                                                <a href="#" class="btn btn-circle bg-white shadow float-right text-info edit-btn">
-                                                                                    <i class="fa fa-edit"></i>
-                                                                                </a>
-                                                                            
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            
-                                                            </div>
-                                                           </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col">
-                                                        <div class="row">
-                                                            <div class="col-md-6">
-                                                                <div class="detail">
-                                                                    <div class="row">
-                                                                        <div class="col-2">
-                                                                            <span class="icon-container">
-                                                                                <button class="btn btn-lg btn-circle bg-white shadow text-danger"><i class="fa fa-envelope"></i></button>
-                                                                            </span>
-                                                                        </div>
-                                                                        <div class="col-10">
-                                                                            <div class="detail-type">
-                                                                                <span class="title text-light">My e-mail</span>
-                                                                                <span class="val">loremipsum@mail.com</span>
-                                                                                <a href="#" class="btn btn-circle bg-white shadow float-right text-info edit-btn">
-                                                                                    <i class="fa fa-edit"></i>
-                                                                                </a>
-                                                                            
-                                                                               
-                                                                            
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>                                                                                                                                    
-
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-md-6">
-                                                            <div class="detail">
-                                                                <div class="row">
-                                                                    <div class="col-2">
-                                                                        <span class="icon-container">
-                                                                            <button class="btn btn-lg btn-circle bg-white shadow text-success"><i class="fa fa-mobile-alt"></i></button>
-                                                                        </span>
-                                                                    </div>
-                                                                    <div class="col-10">
-                                                                        <div class="detail-type">
-                                                                            <span class="title text-light">My phone</span>
-                                                                            <span class="val">+91 458 45268</span>
-                                                                                <a href="#" class="btn btn-circle bg-white shadow float-right text-info edit-btn">
-                                                                                    <i class="fa fa-edit"></i>
-                                                                                </a>
-                                                                            
-                                                            
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            
-                                                            </div>
-                                                           </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col">
-                                                        <div class="row">
-                                                            <div class="col-md-6">
-                                                                <div class="detail">
-                                                                    <div class="row">
-                                                                        <div class="col-2">
-                                                                            <span class="icon-container">
-                                                                                <button class="btn btn-lg btn-circle bg-white shadow text-pink"><i class="fa fa-pen"></i></button>
-                                                                            </span>
-                                                                        </div>
-                                                                        <div class="col-10">
-                                                                            <div class="detail-type">
-                                                                                <span class="title text-light">My Title</span>
-                                                                                <span class="val">Your Title</span>
-                                                                                <a href="#" class="btn btn-circle bg-white shadow float-right text-info edit-btn">
-                                                                                    <i class="fa fa-edit"></i>
-                                                                                </a>
-                                                                                
-                                                                               
-                                                                            
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>                                                                                                                                    
-
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-md-6">
-                                                            <div class="detail">
-                                                                <div class="row">
-                                                                    <div class="col-2">
-                                                                        <span class="icon-container">
-                                                                            <button class="btn btn-lg btn-circle bg-white shadow text-secondary"><i class="fa fa-user-secret"></i></button>
-                                                                        </span>
-                                                                    </div>
-                                                                    <div class="col-10">
-                                                                        <div class="detail-type">
-                                                                            <span class="title text-light">My Industry</span>
-                                                                            <span class="val">Your Industry</span>
-                                                                            <a href="#" class="btn btn-circle bg-white shadow float-right text-info edit-btn">
-                                                                                <i class="fa fa-edit"></i>
-                                                                            </a>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            
-                                                            </div>
-                                                           </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col">
-                                                        <div class="row">
-                                                            <div class="col-md-6">
-                                                                <div class="detail">
-                                                                    <div class="row">
-                                                                        <div class="col-2">
-                                                                            <span class="icon-container">
-                                                                                <button class="btn btn-lg btn-circle bg-white shadow text-purple"><i class="fa fa-trophy"></i></button>
-                                                                            </span>
-                                                                        </div>
-                                                                        <div class="col-10">
-                                                                            <div class="detail-type">
-                                                                                <span class="title text-light">My Goal</span>
-                                                                                <span class="val">Business</span>
-                                                                                <a href="#" class="btn btn-circle bg-white shadow float-right text-info edit-btn">
-                                                                                    <i class="fa fa-edit"></i>
-                                                                                </a>
-                                                                               
-                                                                            
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>                                                                                                                                    
-
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-md-6">
-                                                            <div class="detail">
-                                                                <div class="row">
-                                                                    <div class="col-2">
-                                                                        <span class="icon-container">
-                                                                            <button class="btn btn-lg btn-circle bg-white shadow text-lemon"><i class="fa fa-dice-d20"></i></button>
-                                                                        </span>
-                                                                    </div>
-                                                                    <div class="col-10">
-                                                                        <div class="detail-type">
-                                                                            <span class="title text-light">My Connection Idea</span>
-                                                                            <span class="val">Your Connection Idea</span>
-                                                                                <a href="#" class="btn btn-circle bg-white shadow float-right text-info edit-btn">
-                                                                                    <i class="fa fa-edit"></i>
-                                                                                </a>
-                                                            
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            
-                                                            </div>
-                                                           </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col">
-                                                        <div class="row">
-                                                            <div class="col-md-6">
-                                                                <div class="detail">
-                                                                    <div class="row">
-                                                                        <div class="col-2">
-                                                                            <span class="icon-container">
-                                                                                <button class="btn btn-lg btn-circle bg-white shadow text-info"><i class="fa fa-map-marker-alt"></i></button>
-                                                                            </span>
-                                                                        </div>
-                                                                        <div class="col-10">
-                                                                            <div class="detail-type">
-                                                                                <span class="title text-light">My Location</span>
-                                                                                <span class="val">Location</span>
-                                                                                <a href="#" class="btn btn-circle bg-white shadow float-right text-info edit-btn">
-                                                                                    <i class="fa fa-edit"></i>
-                                                                                </a>
-                                                                               
-                                                                            
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>                                                                                                                                    
-
-                                                                </div>
-                                                            </div>
-                                                            
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                              
-                                            
-                                             
-                                            </div>
-
-                                            <!-- END PROFILE CONTENT -->
-                                            <div class="foot-icon">
-                                                <div class="social-info">
-                                                    <div class="control-btn text-center">
-                                                        <button class="btn btn-circle bg-white social">
-                                                            <img src="images/linkedin.png" alt="linkedin" class="img-responsive rounded-circle">
-                                                        </button>
-                                                        <button class="btn btn-circle bg-white social">
-                                                            <img src="images/twitter.png" alt="linkedin" class="img-responsive rounded-circle">
-                                                        </button>
-                                                        <button class="btn btn-circle bg-white social">
-                                                            <img src="images/facebook.png" alt="linkedin" class="img-responsive rounded-circle">
-                                                        </button>
-                                                        <button class="btn btn-circle bg-white social">
-                                                            <img src="images/instagram.png" alt="linkedin" class="img-responsive rounded-circle">
-                                                        </button>
-                                                        <button class="btn btn-circle bg-white social">
-                                                            <img src="images/globe.png" alt="linkedin" class="img-responsive rounded-circle">
-                                                        </button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                
-                                        </div>
-
-                                 
-                
-                                    </div>
-                
-                                </div>
-                
-                                
-                            </div>
+                           
                            
                         </div>
                         <!-- end row -->
@@ -711,13 +274,7 @@
                  
                     </section>
                 
-                    <div class="f-container-temp" >
-    
-                            <p class="text-light f-s-16 t-s-1 text-center " style="margin-top: 1rem;">connect with people from your exisiting network
-                                <button class="btn btn-lg btn-rounded bg-blue f-s-12">Add Connections</button>
-                            </p>
-                        
-                    </div>
+                  
                 </main>
 
                 

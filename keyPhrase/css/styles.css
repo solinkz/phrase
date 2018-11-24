@@ -252,7 +252,7 @@ li.search a{
 #sidebar form label{
     display: block;
 }
-#sidebar form input[type=text], #sidebar form input[type=email], #sidebar form select,#sidebar form input[type=password]{
+#sidebar form input[type=text], #sidebar form input[type=email], #sidebar form select,#sidebar form input[type=password],#sidebar form input[type=tel]{
     border: none;
     border-bottom: 1px solid #627298;
     width: 100%;
@@ -262,7 +262,7 @@ li.search a{
     width: 100%;
 }
 
-#sidebar form input[type=text], #sidebar form input[type=email], #sidebar form input[type=password]{
+#sidebar form input[type=text], #sidebar form input[type=email], #sidebar form input[type=password],#sidebar form input[type=tel]{
     color: #627298;
     font-family: 'Josefin Sans', sans-serif;
     padding-bottom: 10px;
