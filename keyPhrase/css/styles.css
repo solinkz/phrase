@@ -404,6 +404,7 @@ input:checked + .slider:before {
   position: relative;
   width: 100%;
 }
+
 .c-select select {
   display: none; /*hide original SELECT element:*/
 }

@@ -13,9 +13,10 @@
         crossorigin="anonymous">
 
     
+    <!-- other page styles -->
+    <link rel="stylesheet" href="css/secondary.css">
 
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/secondary.css">
 
     <link rel="stylesheet" href="css/jquery.range.css">
 
@@ -398,7 +399,7 @@
                 <main class="temp">
                 
                     <section id="content">
-                        <div class="button-toggle p-3 clearfix">
+                        <div class="button-toggle bg-white p-3 clearfix">
                             <span class="lead f-s-22">LOGO</span>
                             <div class="t-container float-right" id="toggle-switch">
                                 <div class="bar1"></div>
@@ -409,83 +410,19 @@
                 
                         <div class="container">
                             <!-- start row -->
-                            <div class="row" style="margin-top: 50px;">
+                            <div class="row" style="margin-top: 30px;">
                                 <div class="temp-wrapper">
-                                    <div class="box user-card-component position-relative">
-                                        <div class="box-card" >
-                                            <div class="img-wrapper">
-                                                <div class="profile-img">
-                                                    <div class="p-img">
-                                                        <img src="images/a1.jpg" alt="avatar" >
-                                                        <span class="cam"></span>
-                                                    </div>
-                                                    <div class="b-info">
+                                    <div class="box user-card-component ">
 
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="p-content">
-                                                <div class="row">
-                                                    <div class="col">
-                                                        <div class="row">
-                                                            <div class="col-md-6">
-                                                                <div class="detail">
-                                                                    <div class="row">
-                                                                        <div class="col-2">
-                                                                            <span class="icon-container">
-                                                                                <button class="btn btn-lg btn-circle bg-white shadow text-info">A</button>
-                                                                            </span>
-                                                                        </div>
-                                                                        <div class="col-10">
-                                                                            <div class="detail-type">
-                                                                                <span class="title text-light">Title of Blah</span>
-                                                                                <span class="val">lorem ipsum dolor sit amet</span>
-                                                                                <span class="float-right sec-val">20</span>
-                                            
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                            
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-md-6">
-                                                                <div class="detail">
-                                                                    <div class="row">
-                                                                        <div class="col-2">
-                                                                            <span class="icon-container">
-                                                                                <button class="btn btn-lg btn-circle bg-white shadow text-info">A</button>
-                                                                            </span>
-                                                                        </div>
-                                                                        <div class="col-10">
-                                                                            <div class="detail-type">
-                                                                                <span class="title text-light">Title of Blah</span>
-                                                                                <span class="val">lorem ipsum dolor sit amet </span>
-                                                                                <span class="float-right sec-val">20</span>
-                                            
-                                                                            </div>
-                                                                            
-                                                                        </div>
-                                                                    </div>
-                                            
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            
-                                            </div>
-                                            
+                                        <!-- add/remove p-0 to remove padding -->
+                                        <div class="box-card shadow-lg p-0" >
+
+                                            <!-- CONTENT HERE -->
+
                                         </div>
-
-                                        
-                
                                     </div>
-                
-                                </div>
-                
-                                
-                            </div>
-                           
+                                </div>                
+                            </div> 
                         </div>
                         <!-- end row -->
                         
@@ -515,8 +452,11 @@
 
     <!-- Optional JavaScript -->
     <script src="js/jquery-3.3.1.min.js"></script>
-   
+    
+    <script src="js/popper.min.js"></script>
+
     <script src="js/bootstrap.min.js"></script>
+
 
     <script src="js/jquery.range.js"></script>
 
@@ -560,10 +500,25 @@
                 isRange: true
             });
 
+            $(function () {
+                $('[data-toggle="tooltip"]').tooltip()
+            })
             //  $('#toggle-switch').click(function() {
             //         $(this).toggleClass("change"); 
             //  });
            
+
+
+            // -------------------------------------------------
+            // PROFILE DETAIL MOUSE OVER SCRIPT FOR TOOLTIP
+            // ------------------------------------------------
+
+            $('.detail').mouseover(function(){
+                $(this).find('a.edit-btn').show();
+            });
+            $('.detail').mouseout(function(){
+                $(this).find('a.edit-btn').hide();
+            });
 
         });
     </script>
