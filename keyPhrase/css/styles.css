@@ -727,6 +727,13 @@ background:#406fe0;
 .control-btn button.social img{
     max-width: 25px;
 }
+ button.side-social{
+     position: relative;
+     /* box-shadow: 0 0 8px rgb(235, 240, 252), 0 0 12px rgb(227, 234, 250); */
+}
+ button.side-social img{
+    max-width: 25px;
+}
 .about-btn button{
     margin: 4px 5px;
     font-size: 14px !important;
@@ -743,6 +750,11 @@ button.social{
 button.social img{
     position: absolute;
     top: 1.5px;
+    left: 2px;
+}
+button.side-social img{
+    position: absolute;
+    top: -4px;
     left: 2px;
 }
 

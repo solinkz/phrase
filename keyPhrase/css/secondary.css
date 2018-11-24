@@ -91,22 +91,20 @@
 }
 
 .addon-type{
-    padding: 1rem .5rem;
+    padding: 1rem .5rem 0;
 }
 
 .addon-type .type-text{
-    padding:0.5rem 0 2rem;
-    border-bottom: 1px solid rgba(0 ,0 ,0 , .13);
+    padding:.5rem 0 0;
+    /* border-bottom: 1px solid rgba(0 ,0 ,0 , .13); */
 }
-.addon-type .type-text:last-child{
-    /* border-bottom: none; */
-}
+
 .type-text span{
     display: block;
 }
 .type-text span:first-child{
     font-size: 16px;
-    font-weight: 700;
+    font-weight: 500;
     text-transform: capitalize;
 }
 .type-text span{
@@ -154,7 +152,7 @@
     }
 
     .type-text{
-        padding:0.5rem 1rem 2rem !important;
+        padding:0.5rem 1rem 0.5rem !important;
        
     }
 }
@@ -166,7 +164,7 @@
 }
 @media(max-width:1024px){
     .box-card{
-        width: calc(1024px - 546px);    
+        width: calc(1024px - 546px) !important;    
     }
 }
 @media(max-width:1280px){
