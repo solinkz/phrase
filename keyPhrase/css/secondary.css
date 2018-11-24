@@ -164,6 +164,16 @@
         padding:2rem !important;
     }
 }
+@media(max-width:1024px){
+    .box-card{
+        width: calc(1024px - 546px);    
+    }
+}
+@media(max-width:1280px){
+    .box-card{
+        width: calc(1280px - 546px);    
+    }
+}
 
 @media (min-width: 1500px) {
     .box-card{
