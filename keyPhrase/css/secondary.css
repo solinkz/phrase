@@ -148,15 +148,27 @@
     .conn-wrapper{
         padding:0;
     }
-    .conn-head, .conn-filter, .conn-list{
-        padding: 1.5rem 2rem;
+    .conn-head{
+        padding: 1rem 2rem;
     }
     .conn-filter{
+        padding: 1rem 2rem;
+    }
+    .conn-list{
+        padding: 1rem 1rem;
+        position: relative;
+    }
+    .conn-filter{
+        position: relative;
         font-size: 14px;
         margin: 0;
         padding-top: .5rem;
         padding-bottom: .5rem;
         background-color: rgba(98, 114, 152, 0.185);
+
+    }
+    span.filter{
+        font-size: 1rem;
     }
     .connection-select{
         width: auto !important;
@@ -175,7 +187,35 @@
     .connection-select >.select-items div, .connection-select  >.select-selected {
         width: 120px; 
     }
+    
+    .hidden-search{
+        width: 100%;
+        height: 100%;
+        padding: 1rem 1rem;
+        position: absolute;
+        display: none;  
+        top:0;
+        left:0;
+        z-index: 1;
+        /* background-color: rgba(195, 224, 250, 0.9); */
+        background: linear-gradient(to right, rgba(244, 252, 255, 0.95), rgb(225, 233, 245));
+    }
 
+    .hidden-btn{
+        display: inline-block;
+        position: absolute;
+        right: 10px;
+        top: 14px;
+    }
+    .search-close{
+        font-size: 18px;
+        position: absolute;
+        top:10px;
+        right: 15px
+    }
+    .search{
+        display: none;
+    }
      .search-box{
         display: inline-block;
         border-bottom: 1px solid #0f2862;
@@ -186,8 +226,84 @@
         border:none;
         background: transparent;
     }
+    .hidden-search .search-box, .hidden-search input[type=search]{
+        display: block;
+        width: 100%;
+        font-size: 16px;
+        font-weight: 300;
+    }
+     .hidden-search .search-box{
+         padding: 0 1rem;
+     }
     .search-box input[type=search]:focus{
         outline:none;
+    }
+
+    .conn-list img{
+        max-width: 40px;
+    }
+    .conn-list .holder .conn-list .info{
+        display: inline-block;
+    }
+    .conn-list .info{
+        display: inline-block;
+        padding-left: 10px;
+    }
+
+    .c-hr{
+        width: 85%;
+    }
+     .conn-list .c-person{
+       margin-bottom: 2.5rem;
+       position: relative;
+     }
+    .conn-list .options{
+        display: none;
+        position: absolute;
+        right: 2rem;
+        top: 22px;
+    }
+
+    .conn-list .small-option-btn{
+        position: absolute;
+        right: -6px;
+        top: 14px;
+        display: block;
+    }
+    .conn-list .small-option{
+        display: none;
+        position: absolute;
+        right: -40px;
+        top: 12px;
+        background-color: #fff;
+        padding:8px 18px ;
+        border-radius: 50px;
+        box-shadow: 0 0 16px rgba(115, 181, 219, 0.548);
+        /* -ms-transform: rotate(90deg); 
+        -webkit-transform: rotate(90deg); 
+        transform: rotate(90deg); */
+        
+    }
+    .small-option a, .small-option span{
+        display: inline-block;
+        margin-right: 4px;
+         /* -ms-transform: rotate(-90deg); 
+        -webkit-transform: rotate(-90deg); 
+        transform: rotate(-90deg); */
+        font-size: 14px;
+      
+    }
+    .conn-list span{
+        display: block;
+    }
+    .conn-list span.name{
+        font-size:16px;
+        margin-bottom: 4px;
+    }
+    .conn-list span.job, .conn-list span.location{
+        font-size:10px;
+        line-height: 1;
+
     }
 
 /* ---------------------------------------------------
@@ -219,6 +335,25 @@
      .connection{
         padding: 0 !important;
     }
+     .conn-list{
+        padding: 1rem 2rem;
+    }
+     .conn-list span{
+        line-height: 1.5;
+    }
+     .conn-list img{
+        max-width: 60px;
+    }
+     .conn-list span.name{
+        font-size:20px;
+    }
+    .conn-list span.job, .conn-list span.location{
+        font-size:12px;
+    }
+
+    .conn-list .info{
+        padding-left: 1rem;
+    }
 }
 @media(min-width: 992px){
     .box-card{
@@ -229,6 +364,19 @@
     .box-card{
         width: calc(1280px - 546px);    
     }
+    .conn-list .options{
+        display: block;
+        position: absolute;
+        right: 2rem;
+        top: 22px;
+    }
+    .conn-list .small-option, .conn-list .small-option-btn{
+        display: none;
+    }
+    .search{
+        display: block;
+    }
+    
 }
 
 @media (min-width: 1366px){
@@ -243,5 +391,8 @@
 
     .temp-wrapper{
         padding:  3rem 13rem !important;
+    }
+     .conn-list span.job, .conn-list span.location{
+        font-size:14px;
     }
 }
