@@ -790,6 +790,32 @@ button.social img{
 .text-lemon{
     color: #67e003;
 }
+
+.text-golden{
+
+    background-image: -webkit-gradient( linear, left top, right top, color-stop(0, #ffde22), color-stop(1, #d45500));
+    background-image: gradient( linear, left top, right top, color-stop(0, #ffde22), color-stop(1, #d45500) );
+    color:transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.border-golden { 
+    width: 100%;
+    padding: 0;
+    border-top: 1px solid #FFFF00;
+    border-bottom:1px solid #FF0000;
+    background-image: 
+        linear-gradient(#FFFF00, #FF0000),
+        linear-gradient(#FFFF00, #FF0000)
+    ;
+    background-size:1px 100%;
+    background-position:0 0, 100% 0;
+    background-repeat:no-repeat;
+}
+
+
+
 .t-s-1{
     letter-spacing: 1px;
 }
