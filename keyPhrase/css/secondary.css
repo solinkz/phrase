@@ -167,7 +167,7 @@
 
 @media (min-width: 1500px) {
     .box-card{
-        width: calc(1500px - 546px);    
+        width: calc(1500px - 696px);    
     }
 
     .temp-wrapper{
