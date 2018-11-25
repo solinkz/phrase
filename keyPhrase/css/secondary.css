@@ -706,11 +706,11 @@
 }
 @media (min-width: 1500px) {
     .box-card{
-        width: calc(1500px - 696px);    
+        width: calc(1500px - 554px);    
     }
 
     .temp-wrapper{
-        padding:  3rem 13rem !important;
+        padding:  3rem 6rem !important;
     }
      .conn-list span.job, .conn-list span.location{
         font-size:14px;
