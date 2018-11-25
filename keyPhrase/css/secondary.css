@@ -267,7 +267,7 @@
 
     .conn-list .small-option-btn{
         position: absolute;
-        right: -6px;
+        right: 12px;
         top: 14px;
         display: block;
     }
@@ -311,11 +311,11 @@
     MEDIA QUERIES
 ----------------------------------------------------- */
 
-@media(max-width: 599px){
+/* @media(max-width: 599px){
      .connection{
-        width: 380px;
+        width: 335px;
     }
-}
+} */
 @media(min-width: 600px){
     .box-card{
         width: 100% ;
@@ -324,7 +324,7 @@
 
      .connection{
         padding: 0 !important;
-          width: 560px;
+          /* width: 560px; */
     }
     .type-text{
         padding:0.5rem 1rem 0.5rem !important;
@@ -379,6 +379,9 @@
     }
     .conn-list .small-option, .conn-list .small-option-btn{
         display: none;
+    }
+    .holder{
+        margin-left: -50px;
     }
     .search{
         display: block;
