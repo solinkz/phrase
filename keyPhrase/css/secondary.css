@@ -143,6 +143,7 @@
 ----------------------------------------------------- */
     .connection{
         padding: 0 !important;
+        width: 380px;
     }
 
     .conn-wrapper{
@@ -310,9 +311,11 @@
     MEDIA QUERIES
 ----------------------------------------------------- */
 
-
-
-
+@media(max-width: 599px){
+     .connection{
+        width: 380px;
+    }
+}
 @media(min-width: 600px){
     .box-card{
         width: 100% ;
@@ -321,10 +324,14 @@
 
      .connection{
         padding: 0 !important;
+          width: 560px;
     }
     .type-text{
         padding:0.5rem 1rem 0.5rem !important;
        
+    }
+      .conn-list span.job, .conn-list span.location{
+        font-size:12px;
     }
 }
 @media(min-width: 768px){
