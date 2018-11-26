@@ -1471,7 +1471,6 @@ button.side-social img{
   
     }
       
-    }
     .c-select{
         width:100%;
     }
@@ -1504,20 +1503,27 @@ button.side-social img{
         max-height: 280px !important;
     }
 
-    .card-name{
-        font-size: 24px;
+    .p-info .p-name{
+        font-size: 2rem !important;
     }
-    .card-place, .card-lbl{
-        font-size: 18px;
+    .p-info span{
+        font-size: 20px;
     }
     .card-distance{
         font-size: 16px;
     }
-    .goal-info .about-btn button {
+
+    
+    .user-card .img-cont{
+        width: 400px;
+        margin: 0 auto;
+        
+    }
+    /* .goal-info .about-btn button {
         margin: 4px 1px;
         font-size: 12px !important;
         padding: 4px 10px;
-    }
+    } */
 
 
     .txt{
@@ -1552,43 +1558,25 @@ button.side-social img{
     .slider-container .back-bar .pointer-label{
         top: -26px !important;
     }
+    .txt{
+        font-size: 1.2rem;
+    }
+    .goal-info  {
+        text-align: center;
+        font-size: 16px;
+    }
+    .goal-info .about-btn button {
+        margin: 4px 1px;
+        font-size: 16px !important;
+        padding: 4px 10px;
+    }
+
+    .i-icon {
+        right: 47%;
+    }
+
 
 }
 
 
-/* @media (min-height: 768px) and (max-height: 864px) {
-    #sidebar{
-        height: 768px
-    }
-}
-@media (min-height: 864px) and (max-height: 900px) {
-    #sidebar{
-        height: 864px
-    }
-}
-@media (min-height: 900px) and (max-height: 950px) {
-    #sidebar{
-        height: 900px
-    }
-}
-@media (min-height: 950px) and (max-height: 1050px){
-    #sidebar{
-        height: 950px
-    }
-}
-@media (min-height: 1050px) and (max-height: 1080px) {
-    #sidebar{
-        height: 1050px
-    }
-}
 
-@media (min-height: 1080px) {
-    #sidebar{
-        height: 1080px;
-    }
-}
-@media (min-height: 1200px) {
-    #sidebar{
-        height: 1200px;
-    }
-} */

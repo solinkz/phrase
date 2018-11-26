@@ -620,6 +620,9 @@
     .conn-list .info{
         padding-left: 1rem;
     }
+    .ps{
+        padding: 2rem !important;
+    }
 }
 @media(min-width: 992px){
     .box-card{
@@ -692,6 +695,13 @@
      .l-img img{
         width: 50px;
     }
+       .ps{
+        width: calc(1500px - 1000px);  
+        padding: 3rem !important; 
+    }
+       .tps {
+        padding: 3rem 6rem !important;
+    }
 
   
 }
@@ -703,14 +713,32 @@
      .l-img img{
         width: 60px;
     }
+     .ps{
+        width: calc(1500px - 946px);  
+        padding: 3rem !important; 
+    }
+       .tps {
+        padding: 3rem 6rem !important;
+    }
+     .i-icon {
+        right: 46% !important;
+    }
+
 }
 @media (min-width: 1500px) {
     .box-card{
         width: calc(1500px - 554px);    
     }
+    .ps{
+        width: calc(1500px - 800px);  
+        padding: 3rem !important; 
+    }
 
     .temp-wrapper{
         padding:  3rem 6rem !important;
+    }
+     .tps {
+        padding: 3rem 9rem !important;
     }
      .conn-list span.job, .conn-list span.location{
         font-size:14px;
