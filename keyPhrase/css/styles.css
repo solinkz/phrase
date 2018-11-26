@@ -218,6 +218,7 @@ li.search a{
     width: 140px;
     margin: 0 auto;
 }
+
 .p-img{
     text-align: center;
     position: relative;
@@ -226,6 +227,16 @@ li.search a{
 .p-img img{
     border: 2px solid #ffda05;
     width: 140px;
+}
+.p-info{
+    text-align: center;
+    margin-top: 1rem;
+}
+.p-info .p-name{
+    font-size: 22px !important;
+}
+.p-info span{
+    font-size: 16px;
 }
 
 .profile-img .cam{
@@ -626,9 +637,46 @@ background:#406fe0;
 }
 .i-icon{
     position: absolute;
-    bottom: 12px;
-    right: 20px;
+    bottom: -20px;
+    right: 45%;
 } 
+
+.up{
+   position: absolute;
+    top: -25px;
+    right: 43%;  
+    transition: .5s;
+}
+
+.i-icon i{
+    font-size: 20px;
+}
+.report-icon{
+    position: absolute;
+    top: 12px;
+    right: 52px;
+    color: #888;
+} 
+
+.report-icon button{
+    color: #888;
+}
+.report-icon:hover button{
+    color: #e01010;
+}
+.share-icon{
+    position: absolute;
+    top: 12px;
+    right: 15px;
+    color: #888;
+} 
+
+.share-icon button{
+    color: #888;
+}
+.share-icon:hover button{
+    color: #10a5e0;
+}
 
 .hidden-info{
     display: none;
@@ -637,7 +685,7 @@ background:#406fe0;
 .base-info{
     padding: 1rem;
     width: 100%;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.13);
+    /* border-bottom: 1px solid rgba(0, 0, 0, 0.13); */
 }
 
 .card-name{
@@ -745,13 +793,13 @@ background:#406fe0;
     margin-top: 2rem;
 }
 .user-info .control-btn button{
-     box-shadow: 0 0 8px rgb(235, 240, 252), 0 0 12px rgb(227, 234, 250);
+     box-shadow: 0 0 12px rgb(227, 234, 250), 0 0 16px rgb(219, 229, 250);
      margin-right: 2px;
      position: relative;
 }
 
 .control-btn button{
-     box-shadow: 0 0 8px rgb(235, 240, 252), 0 0 12px rgb(227, 234, 250);
+     box-shadow: 0 0 12px rgb(227, 234, 250), 0 0 16px rgb(219, 229, 250);
      margin-right: 8px;
      position: relative;
 }
@@ -841,6 +889,9 @@ button.side-social img{
 }
 .text-lemon{
     color: #67e003;
+}
+.text-orange{
+    color: orange;
 }
 
 .text-golden{
