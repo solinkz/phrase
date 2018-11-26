@@ -845,6 +845,9 @@ button.side-social img{
     top: -4px;
     left: 2px;
 }
+button.side-social i{
+   font-size: 16px;
+}
 
 
 
@@ -1135,7 +1138,7 @@ button.side-social img{
 /* ---------------------------------------------------
     MEDIAQUERIES
 ----------------------------------------------------- */
-@media (max-width: 576px){
+@media (max-width: 660px){
     body{
         font-size: .8rem;
     }
@@ -1144,7 +1147,8 @@ button.side-social img{
     }
     main{
         margin-left: 0  !important;
-        padding-left: 0 ;
+        padding-left: 0 !important;
+
     }
     main.temp{
         margin-left: 0  !important;
@@ -1174,7 +1178,7 @@ button.side-social img{
     }
     .user-card-component .box-card {
         border-radius: 12px;
-        padding: 1rem;
+        padding:3rem 1rem;
         background: #fff;
         display: block;
     }
@@ -1445,6 +1449,13 @@ button.side-social img{
         font-size: 1.5rem !important;
         
     }
+    
+    .user-card-component .box-card{
+        border-radius: 12px;
+        padding:3rem 1rem;
+        background: #fff;
+        display: -webkit-inline-box;
+    }
 
     .f-container{
         margin-left: 380px;
@@ -1469,6 +1480,12 @@ button.side-social img{
       
         font-size: 20px;
   
+    }
+
+    #sidebar .category .cat-body .icon {
+        position: absolute;
+        bottom: 2px;
+        right: -1px;
     }
       
     .c-select{
@@ -1497,7 +1514,9 @@ button.side-social img{
     .control-btn button.social img{
         max-width: 40px;
     }
-
+    button.side-social i{
+        font-size: 18px;
+    }
      .user-info .img img{
         max-width: 250px !important;
         max-height: 280px !important;
@@ -1572,7 +1591,7 @@ button.side-social img{
     }
 
     .i-icon {
-        right: 47%;
+        right: 45%;
     }
 
 

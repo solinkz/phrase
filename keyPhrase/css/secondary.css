@@ -730,7 +730,7 @@
         width: calc(1500px - 554px);    
     }
     .ps{
-        width: calc(1500px - 800px);  
+        width: calc(1500px - 1000px);  
         padding: 3rem !important; 
     }
 
