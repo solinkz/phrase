@@ -584,6 +584,12 @@
     .chat-header .options {
         font-size: 10px;
     }
+    .receive{
+        margin-right: -17px;
+    }
+    .send{
+        margin-left: -17px;
+    }
   
 }
 @media(min-width: 600px){
