@@ -414,7 +414,7 @@
     .msgn .list-body{
          height: 100%;
          overflow-y: auto;
-         overflow-x: auto;
+         overflow-x: hidden;
     }
     .list{
         padding: 1rem;
