@@ -428,7 +428,7 @@
                         <div class="container">
                             <!-- start row -->
                             <div class="row" style="margin-top: 30px;">
-                                <div class="temp-wrapper special-temp">
+                                <div class="temp-wrapper">
                                     <div class="box user-card-component ">
  
                                         <div class="box-card shadow-lg connection" >
@@ -829,6 +829,21 @@
 
     <script>
         $(document).ready(function () {
+
+
+
+            function resize() {
+                if ($(window).width() < 376) {
+                    $('.temp-wrapper').addClass('special-temp').removeClass('temp-wrapper');
+                }
+                else { $('.special-temp').addClass('temp-wrapper').removeClass('special-temp'); }
+            }
+
+            $(document).ready(function () {
+                $(window).resize(resize);
+                resize();
+            });
+
 
             $('#toggle-switch').on('click', function () {
                 $('#sidebar').toggleClass('active').toggle();
