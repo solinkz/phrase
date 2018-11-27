@@ -118,60 +118,69 @@
                     
                             <!-- category -->
                             <div class="category">
+                    
                                 <div class="cat-title">
-                                    Discovery Settings
+                                    My profile
                                 </div>
                                 <div class="cat-body clearfix">
-                                    <div class="box-link">
-                                        <a href="#">View My profile</a>
-                                        <span class="float-right">
-                                            <i class="fa fa-chevron-right"></i>
-                                        </span>
+                                    <!-- image -->
+                                    <div class="profile-img">
+                                        <div class="p-img">
+                                            <img src="images/a4.jpg" alt="avatar" class="img-responsive rounded-circle">
+                                            <span class="cam">
+                                                <button class="btn btn-circle bg-white shadow">
+                                                    <i class="fa fa-camera"></i>
+                                                </button>
+                                            </span>
+                                        </div>
                                     </div>
-                                    <div class="box-link">
-                                        <a href="#">Share my profile</a>
-                                        <span class="float-right">
-                                            <i class="fa fa-share-alt"></i>
-                                        </span>
-                                    </div>
-                                    <div class="distance">
+                                    <!-- end image -->
                     
-                                        <label for="Distance">Maximum Distance
-                                            <span class="float-right">
-                                                <span id="distanceOutput">100</span> mi.</span>
+                                    <div class="b-info mb-2 position-relative">
+                                        <span class="b-name">Gabriel Bryne</span>
+                                        <span class="edit">&nbsp;
+                                            <i class="fa fa-pencil-alt"></i>
+                                        </span>
+                                        <br>
+                                        <span class="text-light b-loc">
+                                            <i class="fa map-marker-alt"></i>Los Angeles, CA</span>
+                                        <label for="bday">
+                    
+                                            <span class="icon">
+                                                <i class="fa fa-pencil-alt"></i>
+                                            </span>
                                         </label>
+                                        <input type="text" name="description" id="description" class="text-center px-4" maxlength="50" placeholder="Short Description about yourself">
+                                    </div>
+                                    <!-- end profile image/info -->
+                                    <div class="position-relative mb-4">
                     
-                                        <input type="range" min="1" max="150" value="50" class="range " id="distance">
+                                        <label for="bday">
+                                            <span class="text-blue">My Birthday</span>
+                                            <span class="icon">
+                                                <i class="fa fa-pencil-alt"></i>
+                                            </span>
+                                        </label>
+                                        <input type="text" name="bday" id="bday" placeholder="My Birdthday" Value="30 Jan, 2018">
                                     </div>
                                     <div class="c-select settings special">
-                                        <span class="label">My Current Location</span>
-                                        <select>
-                                            <option value="0">Los Angeles, CA</option>
-                                    
-                                        </select>
-                                    </div>
-                                    <!-- <div class="c-select settings special">
                                         <span class="label">Gender</span>
                                         <select>
                                             <option value="0">Male</option>
                                             <option value="0">Female</option>
-                                    
-                                        </select>
-                                    </div> -->
-                                    <div>
-                                        <label for="age" class="mt-2 d-block">Age
-                                    
-                                        </label>
-                                        <div class="mb-4 mt-3">
-                                    
-                                            <input type="hidden" class="range-slider" value="23,75" />
-                                        </div>                                                                       
-                                    
-                                    </div>
-                                   
                     
-                                    <div class="position-relative">
-                                    
+                                        </select>
+                                    </div>
+                    
+                                    <!-- <div class="box-link">
+                                                            <a href="#">View My profile</a>
+                                                            <span class="float-right">
+                                                                <i class="fa fa-chevron-right"></i>
+                                                            </span>
+                                                        </div> -->
+                    
+                                    <div class="position-relative pt-2">
+                                        <span class="text-blue">My Email</span>
                                         <label for="email">
                                             <span class="icon">
                                                 <i class="fa fa-pencil-alt"></i>
@@ -179,206 +188,156 @@
                                         </label>
                                         <input type="email" name="email" id="email" placeholder="Change Email">
                                     </div>
-                                    <div class="position-relative mb-4">
-                                    
-                                        <label for="password">
+                                    <div class="position-relative pt-2">
+                                        <span class="text-blue">My Phone</span>
+                                        <label for="phone">
                                             <span class="icon">
                                                 <i class="fa fa-pencil-alt"></i>
                                             </span>
                                         </label>
-                                        <input type="password" name="password" id="password" placeholder="Change Password">
+                                        <input type="tel" name="tel" id="tel" placeholder="your phone number" value="+91 76542 23456">
+                                    </div>
+                                    <div class="position-relative pt-2">
+                                        <span class="text-blue">My Title</span>
+                                        <label for="title">
+                                            <span class="icon">
+                                                <i class="fa fa-pencil-alt"></i>
+                                            </span>
+                                        </label>
+                                        <input type="text" name="title" id="title" placeholder="your Title" value="Your Title">
+                                    </div>
+                                    <div class="position-relative pt-2">
+                                        <span class="text-blue">My Industry</span>
+                                        <label for="Industry">
+                                            <span class="icon">
+                                                <i class="fa fa-pencil-alt"></i>
+                                            </span>
+                                        </label>
+                                        <input type="text" name="industry" id="industry" placeholder="your Industry" value="Your Industry">
+                                    </div>
+                                    <div class="position-relative pt-2">
+                                        <span class="text-blue">My Goal</span>
+                                        <label for="Industry">
+                                            <span class="icon">
+                                                <i class="fa fa-pencil-alt"></i>
+                                            </span>
+                                        </label>
+                                        <input type="text" name="goal" id="goal" placeholder="your goal" value="Business">
+                                    </div>
+                                    <div class="position-relative pt-2">
+                                        <span class="text-blue">My Connection Idea</span>
+                                        <label for="Industry">
+                                            <span class="icon">
+                                                <i class="fa fa-pencil-alt"></i>
+                                            </span>
+                                        </label>
+                                        <input type="text" name="idea" id="idea" placeholder="your connection idea" value="Interests">
                                     </div>
                     
-                                </div>
-                    
-                            </div>
-                            <!-- end category -->
-                                <!-- category -->
-                                <div class="category">
-                                    <div class="cat-title">
-                                        Notification
-                                
-                                    </div>
-                                    <div class="cat-body clearfix">
-                                        <p class="font-weight-bold text-blue">EMAIL NOTIFICATION</p>
-                                       <div class="box-link">
-                                            <span class="text-capitalize">New Matches</span>
-                                            
-                                            <label class="switch float-right">
-                                                <input type="checkbox" name="mentorship" id="mentorship">
-                                                <span class="slider round"></span>
-                                            </label>
-                                       </div>
-                                       <div class="box-link">
-                                            <span class="text-capitalize">messages</span>
-                                            
-                                            <label class="switch float-right">
-                                                <input type="checkbox" name="mentorship" id="mentorship">
-                                                <span class="slider round"></span>
-                                            </label>
-                                       </div>
-                                       <div class="box-link mb-3">
-                                            <span>Promotion: I want to receive news,<br> update and other from busy</span>
-                                            
-                                            <label class="switch float-right">
-                                                <input type="checkbox" name="mentorship" id="mentorship">
-                                                <span class="slider round"></span>
-                                            </label>
-                                       </div>
-                                        <p class="font-weight-bold text-blue">PUSH NOTIFICATION</p>
-                                       <div class="box-link">
-                                            <span class="text-capitalize">When someone likes me</span>
-                                            
-                                            <label class="switch float-right">
-                                                <input type="checkbox" name="mentorship" id="mentorship">
-                                                <span class="slider round"></span>
-                                            </label>
-                                       </div>
-                                       <div class="box-link">
-                                            <span class="text-capitalize">New Matches</span>
-                                            
-                                            <label class="switch float-right">
-                                                <input type="checkbox" name="mentorship" id="mentorship">
-                                                <span class="slider round"></span>
-                                            </label>
-                                       </div>
-                                       <div class="box-link">
-                                            <span>New user near join in</span>
-                                            
-                                            <label class="switch float-right">
-                                                <input type="checkbox" name="mentorship" id="mentorship">
-                                                <span class="slider round"></span>
-                                            </label>
-                                       </div>
-                                       <div class="box-link">
-                                            <span>Messages</span>
-                                            
-                                            <label class="switch float-right">
-                                                <input type="checkbox" name="mentorship" id="mentorship">
-                                                <span class="slider round"></span>
-                                            </label>
-                                       </div>
-                                    </div>
-                                
-                                </div>
-                                <!-- end category -->
-                    
-                    
-                            <!-- category -->
-                            <div class="category">
-                                <div class="cat-title">
-                                    Show me on
-                                    <label class="switch float-right">
-                                        <input type="checkbox" name="creative-collaboration" id="creative-collaboration">
-                                        <span class="slider round"></span>
-                                    </label>
-                    
-                                </div>
-                                <div class="cat-body clearfix">
-                                    <span class="t-s-1">while turned off, you will not be shown in the card stack. You can still see and chat with your matches</span>
-                                </div>
-                    
-                            </div>
-                            <!-- end category -->
-                    
-                    
-                     
-                            <!-- category -->
-                            <div class="category">
-                                <div class="cat-title">
-                                    Language
-                    
-                                </div>
-                                <div class="cat-body clearfix">
-                                    <div class="c-select special" style="width:100%;">
-                                        <span class="label">Language</span>
-                                        <select>
-                                            <option value="0">English</option>
-                    
-                                        </select>
+                                    <div class="position-relative pt-2">
+                                        <span class="text-blue">My Current location</span>
+                                        <label for="Industry">
+                                            <span class="icon">
+                                                <i class="fa fa-pencil-alt"></i>
+                                            </span>
+                                        </label>
+                                        <input type="text" name="idea" id="idea" placeholder="your connection idea" value="Los Angeles, CA">
                                     </div>
                     
-                                </div>
                     
-                            </div>
-                            <!-- end category -->
                     
-                            <!-- category -->
-                            <div class="category">
-                                <div class="cat-title">
-                                    Contact us
                     
-                                </div>
-                                <div class="cat-body clearfix">
-                                    <a href="#">Help & Support</a>
+                    
+                    
                     
                                 </div>
                     
                             </div>
                             <!-- end category -->
-                    
                             <!-- category -->
                             <div class="category">
                                 <div class="cat-title">
-                                    Account
-                    
-                                </div>
-                                <div class="cat-body clearfix">
-                                    <a href="#">Restore Purchases</a>
-                    
-                                </div>
-                    
-                            </div>
-                            <!-- end category -->
-                    
-                            <!-- category -->
-                            <div class="category">
-                                <div class="cat-title">
-                                    Legal
-                    
+                                    Social Links
                                 </div>
                                 <div class="cat-body clearfix">
                                     <ul class="nav flex-column">
-                                        <li class="nav-item clearfix">
-                                            <span>Privacy</span>
-                                            <span class="eye float-right text-blue">
-                                                <a href="#">
-                                                    <i class="far fa-eye f-s-18"></i>
-                                                </a>
+                                        <li class="nav-item position-relative">
+                                            <span class="icon">
+                                                <i class="fa fa-pencil-alt"></i>
                                             </span>
+                                            <a href="#">
+                                                <button class="btn bg-white side-social float-right text-theme mr-4  pb-2">
+                                                    <i class="fab fa-linkedin-in"></i>
+                                                </button>
+                                                <span class="text-capitalize">Linkedin</span>
+                    
+                                            </a>
                                         </li>
-                                        <li class="nav-item">
-                                            <span> Terms and Condition</span>
-                                            <span class="eye float-right text-blue">
-                                                <a href="#">
-                                                    <i class="far fa-eye f-s-18"></i>
-                                                </a>
+                                        <li class="nav-item position-relative">
+                                            <span class="icon">
+                                                <i class="fa fa-pencil-alt"></i>
                                             </span>
+                                            <a href="#">
+                                                <button class="btn bg-white side-social float-right text-theme mr-4 pb-2">
+                                                    <i class="fab fa-facebook"></i>
+                                                </button>
+                                                <span class="text-capitalize">Facebook</span>
+                    
+                                            </a>
                                         </li>
-                                        <li class="nav-item">
-                                            <span>Cookie Policy</span>
-                                            <span class="eye float-right text-blue">
-                                                <a href="#">
-                                                    <i class="far fa-eye f-s-18"></i>
-                                                </a>
+                                        <li class="nav-item position-relative">
+                                            <span class="icon">
+                                                <i class="fa fa-pencil-alt"></i>
                                             </span>
+                                            <a href="#">
+                                                <button class="btn bg-white side-social float-right text-theme mr-4 pb-2">
+                                                    <i class="fab fa-instagram"></i>
+                                                </button>
+                                                <span class="text-capitalize">instagram</span>
+                    
+                                            </a>
                                         </li>
-                                        <li class="nav-item">
-                                            <span>Safety Tips</span>
-                                            <span class="eye float-right text-blue">
-                                                <a href="#">
-                                                    <i class="far fa-eye f-s-18"></i>
-                                                </a>
+                                        <li class="nav-item position-relative">
+                                            <span class="icon">
+                                                <i class="fa fa-pencil-alt"></i>
                                             </span>
+                                            <a href="#">
+                                                <button class="btn bg-white side-social float-right text-theme mr-4 pb-2">
+                                                    <i class="fab fa-twitter"></i>
+                    
+                                                </button>
+                                                <span class="text-capitalize">twitter</span>
+                    
+                                            </a>
                                         </li>
-                                        <li class="nav-item">
-                                            <span>Community Guidelines</span>
-                                            <span class="eye float-right text-blue">
-                                                <a href="#">
-                                                    <i class="far fa-eye f-s-18"></i>
-                                                </a>
+                    
+                                        <li class="nav-item position-relative">
+                                            <span class="icon">
+                                                <i class="fa fa-pencil-alt"></i>
                                             </span>
+                                            <a href="#">
+                                                <button class="btn bg-white side-social float-right text-theme mr-4 pb-2">
+                                                    <i class="fa fa-globe"></i>
+                    
+                                                </button>
+                                                <span class="text-capitalize">Website</span>
+                    
+                                            </a>
                                         </li>
+                                        <li class="nav-item position-relative">
+                                            <span class="icon">
+                                                <i class="fa fa-pencil-alt"></i>
+                                            </span>
+                                            <a href="#">
+                                                <button class="btn bg-white side-social float-right  text-theme mr-4 pb-2">
+                                                    <i class="fab fa-blogger-b"></i>
+                                                </button>
+                                                <span class="text-capitalize">Blog</span>
+                    
+                                            </a>
+                                        </li>
+                    
+                    
                     
                                     </ul>
                     
@@ -386,6 +345,7 @@
                     
                             </div>
                             <!-- end category -->
+                    
                     
                             <div class="category footer text-center mt-3">
                                 <div class="category-title text-center f-s-16">
