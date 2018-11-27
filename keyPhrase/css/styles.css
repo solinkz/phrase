@@ -1143,9 +1143,9 @@ button.side-social i{
     body{
         font-size: .8rem;
     }
-     .hidden-header{
+     /* .hidden-header{
         display: none !important;
-    }
+    } */
     main{
         margin-left: 0  !important;
         padding-left: 0 !important;
@@ -1369,6 +1369,7 @@ button.side-social i{
 }
 
 @media (max-width: 1024px) {
+
     main{
         min-width: 100%;
         margin-left: 400px;
