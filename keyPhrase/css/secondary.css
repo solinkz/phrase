@@ -316,13 +316,25 @@
 /* ---------------------------------------------------
     MESSAGE STYLES
 ----------------------------------------------------- */
+    .row-msgn{
+        margin-top: 30px;
+    }
     .list-area{
         margin-right: -5px;
         display: none;  
     }
+    .msgn .list-area{
+      margin: 0;
+      display: block;
+    }
+
     list-area-active{
         display: block;
         height: 100vh;
+    }
+    .msgn list-area-active{
+        display: block;
+        height: 100%;
     }
     .chat-area-inactive{
         opacity: 0;
@@ -398,6 +410,11 @@
          height: 80vh;
          overflow-y: scroll;
          overflow-x: hidden;
+    }
+    .msgn .list-body{
+         height: 100%;
+         overflow-y: auto;
+         overflow-x: auto;
     }
     .list{
         padding: 1rem;
@@ -490,6 +507,9 @@
         max-height: 100px;
         overflow: hidden;
         word-break: break-all;
+    }
+    .msgn .chat-footer textarea{
+        width: 85%;
     }
      .chat-footer textarea:focus{
         outline: none;
@@ -593,6 +613,7 @@
   
 }
 @media(min-width: 600px){
+    
     .box-card{
         width: 100% ;
         padding: 1rem 1rem !important;
@@ -657,6 +678,9 @@
 
     .list-area{
         display: block
+    }
+    .msgn .chat-area{
+        margin-left: 0;
     }
     .chat-area{
         margin-left: -25px;

@@ -1312,7 +1312,12 @@ button.side-social i{
     main.main{
         padding-left: 43px;
     }
-
+    .row-msgn{
+        margin-top: 0;
+    }
+    .msgn .chat-footer textarea {
+        width: 70%;
+    }
     .hidden-header{
         display: block;
     }
