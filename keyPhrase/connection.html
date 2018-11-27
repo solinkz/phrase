@@ -674,7 +674,35 @@
 
     <script src="js/jquery.range.js"></script>
 
+    
+
     <script>
+        
+
+            // function resize() {
+            //     if ($(window).width() < 361) {
+            //         $('.temp-wrapper').addClass('bg-primary')
+            //     }
+            //     else {  $('.temp-wrapper').removeClass('bg-primary'); }
+            // }
+
+            // $(document).ready(function () {
+            //     $(window).resize(resize);
+            //     resize();
+            // });
+            function resize() {
+                if ($(window).width() < 376) {
+                    $('.temp-wrapper').addClass('special-temp').removeClass('temp-wrapper');
+                }
+                else {  $('.special-temp').addClass('temp-wrapper').removeClass('special-temp'); }
+            }
+
+            $(document).ready(function () {
+                $(window).resize(resize);
+                resize();
+            });
+        
+
         $(document).ready(function () {
 
             $('#toggle-switch').on('click', function () {

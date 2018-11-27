@@ -1135,12 +1135,17 @@ button.side-social i{
 
 
 
-
+ .special-temp{
+        padding: 0 !important;
+    }
 
 
 /* ---------------------------------------------------
     MEDIAQUERIES
 ----------------------------------------------------- */
+/* @media (min-width: 30px) {
+    
+} */
 
 @media (max-width: 660px){
     body{
@@ -1165,6 +1170,10 @@ button.side-social i{
     .temp-wrapper {
         padding: 1.5rem !important;
     }
+    /* .special-temp{
+        padding: 0 !important;
+    } */
+    
      #sidebar {
         display: none;
         transition: all 0.3s;
@@ -1172,6 +1181,9 @@ button.side-social i{
         min-width: 100%;
         max-width: 100%;
         height: 100%;
+    }
+     .settings-side{
+        display: block !important;
     }
     .category button.logout-btn img{
         position: absolute;
@@ -1306,6 +1318,9 @@ button.side-social i{
     }
     #sidebar{
         display: none;
+    }
+    .settings-side{
+        display: block !important;
     }
     .f-container{
         width: 100% !important;
