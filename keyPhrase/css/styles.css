@@ -1178,7 +1178,7 @@ button.side-social i{
     }
     .user-card-component .box-card {
         border-radius: 12px;
-        padding:3rem 1rem;
+        padding:3rem .5rem;
         background: #fff;
         display: block;
     }

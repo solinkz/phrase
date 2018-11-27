@@ -570,14 +570,14 @@
     MEDIA QUERIES
 ----------------------------------------------------- */
 
-@media(min-width: 320px){
+/* @media(max-width: 320px){
      .connection{
         width: 335px;
     }
     box-card{
-        padding: 3rem 1rem !important;
+        padding: 3rem 0 !important;
     }
-}
+} */
 @media(min-width: 600px){
     .box-card{
         width: 100% ;
