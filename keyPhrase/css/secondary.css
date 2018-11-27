@@ -3,7 +3,7 @@
 ----------------------------------------------------- */
 .box-card{
     display: block !important;
-    padding: 3rem 4rem !important;
+    padding: 3rem 4rem ;
     width: 100%;
 }
 
@@ -570,11 +570,14 @@
     MEDIA QUERIES
 ----------------------------------------------------- */
 
-/* @media(max-width: 599px){
+@media(min-width: 320px){
      .connection{
         width: 335px;
     }
-} */
+    box-card{
+        padding: 3rem 1rem !important;
+    }
+}
 @media(min-width: 600px){
     .box-card{
         width: 100% ;
