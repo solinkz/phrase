@@ -1138,6 +1138,7 @@ button.side-social i{
 /* ---------------------------------------------------
     MEDIAQUERIES
 ----------------------------------------------------- */
+
 @media (max-width: 660px){
     body{
         font-size: .8rem;
@@ -1187,7 +1188,7 @@ button.side-social i{
         padding:1rem 2rem;
     }
     .user-card .img-cont{
-        width: 278px;
+        width: 270px;
     }
 
     .user-card .control-btn button{
