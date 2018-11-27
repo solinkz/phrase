@@ -502,7 +502,7 @@
      .chat-body{
          overflow-y: scroll;
          height: 67vh;
-         padding: 1.2rem;
+         padding: 2rem;
      }
 
      /* .chat-body .c-img{
@@ -571,14 +571,21 @@
     MEDIA QUERIES
 ----------------------------------------------------- */
 
-/* @media(max-width: 320px){
-     .connection{
-        width: 335px;
+@media(min-width: 320px) and (max-width: 360px){
+   .chat-body{
+       padding: 2rem;
+   }
+   .bubble-toast {
+    font-size: 10px;
+   }
+   .chat-footer {
+    padding: 8px .5rem;
+}
+    .chat-header .options {
+        font-size: 10px;
     }
-    box-card{
-        padding: 3rem 0 !important;
-    }
-} */
+  
+}
 @media(min-width: 600px){
     .box-card{
         width: 100% ;
