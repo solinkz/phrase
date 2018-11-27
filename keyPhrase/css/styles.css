@@ -231,6 +231,33 @@ li.search a{
     border: 2px solid #ffda05;
     width: 140px;
 }
+.p-img .online-indicator{
+      width: 14px;
+        height: 14px;
+        display: inline-block;
+        position: absolute;
+        bottom: 3px;
+        right: 22px;
+        /* background: #eae; */
+        border-radius: 7px;
+        border: 2px solid #fff;
+}
+
+.online{
+    background-color: rgb(8, 185, 8);
+}
+.p-img .verified{
+        width: 18px;
+        height: 18px;
+        display: inline-block;
+        position: absolute;
+        bottom: 3px;
+        right: 2px;
+        border-radius: 9px;
+        font-size: 12px;
+        background-color: rgb(8, 144, 255);
+        color: #fff;
+}
 .p-info{
     text-align: center;
     margin-top: 1rem;
