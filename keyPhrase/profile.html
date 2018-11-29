@@ -206,12 +206,16 @@
                                                     <span class="text-light b-loc">Los Angeles, CA</span>
                                                     <i class="fa fa-pencil-alt f-s-12"></i>
                                                     <br>
-                                                    <!-- <span class="text-light b-loc">Short description sbout you</span> -->
-                                                    <div class="desc mx-auto" style="width: 245px;">
+                                                    <span class="text-light b-loc desc-txt">Short description about you 
+                                                    <a href="#"><i class="fa fa-pencil-alt f-s-12 desc-edit"></i></a>
+                                                        
+                                                    </span>
+                                                    <div class="desc mx-auto" style="width:300px;">
 
-                                                        <input type="text" name="" id="" class="f-s-14 w-100 text-center" placeholder="Short description about you">
+                                                        <input type="text" name="" id="" class=" w-75 f-s-14" placeholder="Short description about you">
+                                                       
+                                                        <a class="btn btn-link  f-s-12 desc-save ">save</a>
                                                     </div>
-                                                    <!-- <i class="fa fa-pencil-alt f-s-12"></i> -->
                                                     <br>
                                                     
                                                 </div>
@@ -517,10 +521,10 @@
                                                     
                                                     <div class="mx-auto url-edit px-2 py-2  text-center" style="width: 400px">
 
-                                                        <input type="url"  name="url-edit" id="urlform" class="w-100 f-s-14 border-0 text-center" >
-                                                        <a href="#" class="btn btn-link f-s-12">save</a>|
-                                                        <a class="btn btn-link text-danger f-s-12 url-cancel">cancel</a>|
-                                                        <a class="btn btn-link text-secondary f-s-12 url-disable">disable</a>
+                                                        <input type="url"  name="url-edit" id="urlform" class=" f-s-14 border-0 text-center" >
+                                                        <a href="#" class="btn btn-link f-s-12">save</a>
+                                                        <a class="btn btn-link text-danger f-s-12 url-cancel">cancel</a>
+                                                        <!-- <a class="btn btn-link text-secondary f-s-12 url-disable">disable</a> -->
                                                     </div>
                                                 </div>
                                                 
@@ -653,6 +657,18 @@
 
             $('.btn-option').click(function(){
                 $(this).toggleClass('btn-theme-light-line btn-primary');
+            });
+
+
+            //...............................................
+            $('.desc-edit').click(function(){
+                $('.desc-txt').hide(),
+                $('.desc').show();
+            });
+            $('.desc-save').click(function(){
+                $(this).parent().hide(),
+                $('.desc-txt').show();
+                
             });
 
 
