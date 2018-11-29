@@ -31,7 +31,7 @@
 </head>
 
 <body>
-    <div class="hidden-header">
+    <!-- <div class="hidden-header">
         <div class="button-toggle-head bg-white p-3 clearfix">
             <span class="lead f-s-22">LOGO</span>
             <div class="t-container float-right" id="toggle-switch-head">
@@ -40,7 +40,7 @@
                 <div class="bar3"></div>
             </div>
         </div>
-    </div>
+    </div> -->
     <div class="wrapper">
         <div class="row" style="margin-right: 0px; margin-left: -18px;">
             <div class="col-lg-3">
@@ -88,7 +88,7 @@
                                     <li class="nav-item">
                                         <a class="nav-link" href="message.html">
                                             <!-- <img src="images/i-3-c_03.png" alt="" class="img-responsive"> -->
-                                            <i class="fa fa-comment-alt"></i>
+                                            <i class="fa fa-comment fa-2x-alt"></i>
                                         </a>
                                     </li>
                                     <li class="nav-item">
@@ -114,295 +114,204 @@
                     
                     <!-- Sidebar Categories -->
                     <div class="category-component">
-                        <form action="" method="post">
-                    
-                            <!-- category -->
-                            <div class="category">
-                                <div class="cat-title">
-                                    Discovery Settings
-                                </div>
-                                <div class="cat-body clearfix">
-                                    <div class="box-link">
-                                        <a href="#">View My profile</a>
-                                        <span class="float-right">
-                                            <i class="fa fa-chevron-right"></i>
+                        <div class="bg-white msgn">
+                            <div class="list-area">
+                                <div class="list-header">
+                                    <div class="dropdown ">
+                                        <a class=" dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            All Conversation
+                                        </a>
+                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                            <a class="dropdown-item" href="#">All Conversation</a>
+                                            <a class="dropdown-item" href="#">Unread</a>
+                                            <a class="dropdown-item" href="#">Starred</a>
+                                        </div>
+                                    </div>
+                        
+                                    <span class="msg-search">
+                                        <i class="fa fa-search"></i>
+                                    </span>
+                                    <div class="list-search ">
+                                        <span class="search-close">
+                                            <i class="fa fa-times"></i>
                                         </span>
+                                        <div class="search-box">
+                                            <label for="search" class="sr-only">search</label>
+                                            <input type="search" name="search" id="search" class="font-italic" placeholder="search by name...">
+                                        </div>
                                     </div>
-                                    <div class="box-link">
-                                        <a href="#">Share my profile</a>
-                                        <span class="float-right">
-                                            <i class="fa fa-share-alt"></i>
-                                        </span>
-                                    </div>
-                                    <div class="distance">
-                    
-                                        <label for="Distance">Maximum Distance
-                                            <span class="float-right">
-                                                <span id="distanceOutput">100</span> mi.</span>
-                                        </label>
-                    
-                                        <input type="range" min="1" max="150" value="50" class="range " id="distance">
-                                    </div>
-                                    <div class="c-select settings special">
-                                        <span class="label">My Current Location</span>
-                                        <select>
-                                            <option value="0">Los Angeles, CA</option>
-                                    
-                                        </select>
-                                    </div>
-                                    <!-- <div class="c-select settings special">
-                                        <span class="label">Gender</span>
-                                        <select>
-                                            <option value="0">Male</option>
-                                            <option value="0">Female</option>
-                                    
-                                        </select>
-                                    </div> -->
-                                    <div>
-                                        <label for="age" class="mt-2 d-block">Age
-                                    
-                                        </label>
-                                        <div class="mb-4 mt-3">
-                                    
-                                            <input type="hidden" class="range-slider" value="23,75" />
-                                        </div>                                                                       
-                                    
-                                    </div>
-                                   
-                    
-                                    <div class="position-relative">
-                                    
-                                        <label for="email">
-                                            <span class="icon">
-                                                <i class="fa fa-pencil-alt"></i>
-                                            </span>
-                                        </label>
-                                        <input type="email" name="email" id="email" placeholder="Change Email">
-                                    </div>
-                                    <div class="position-relative mb-4">
-                                    
-                                        <label for="password">
-                                            <span class="icon">
-                                                <i class="fa fa-pencil-alt"></i>
-                                            </span>
-                                        </label>
-                                        <input type="password" name="password" id="password" placeholder="Change Password">
-                                    </div>
-                    
+                                    <!-- <span class="list-close">
+                                        <i class="fa fa-arrow-right"></i>
+                                    </span> -->
                                 </div>
-                    
-                            </div>
-                            <!-- end category -->
-                                <!-- category -->
-                                <div class="category">
-                                    <div class="cat-title">
-                                        Notification
-                                
-                                    </div>
-                                    <div class="cat-body clearfix">
-                                        <p class="font-weight-bold text-blue">EMAIL NOTIFICATION</p>
-                                       <div class="box-link">
-                                            <span class="text-capitalize">New Matches</span>
-                                            
-                                            <label class="switch float-right">
-                                                <input type="checkbox" name="mentorship" id="mentorship">
-                                                <span class="slider round"></span>
-                                            </label>
-                                       </div>
-                                       <div class="box-link">
-                                            <span class="text-capitalize">messages</span>
-                                            
-                                            <label class="switch float-right">
-                                                <input type="checkbox" name="mentorship" id="mentorship">
-                                                <span class="slider round"></span>
-                                            </label>
-                                       </div>
-                                       <div class="box-link mb-3">
-                                            <span>Promotion: I want to receive news,<br> update and other from busy</span>
-                                            
-                                            <label class="switch float-right">
-                                                <input type="checkbox" name="mentorship" id="mentorship">
-                                                <span class="slider round"></span>
-                                            </label>
-                                       </div>
-                                        <p class="font-weight-bold text-blue">PUSH NOTIFICATION</p>
-                                       <div class="box-link">
-                                            <span class="text-capitalize">When someone likes me</span>
-                                            
-                                            <label class="switch float-right">
-                                                <input type="checkbox" name="mentorship" id="mentorship">
-                                                <span class="slider round"></span>
-                                            </label>
-                                       </div>
-                                       <div class="box-link">
-                                            <span class="text-capitalize">New Matches</span>
-                                            
-                                            <label class="switch float-right">
-                                                <input type="checkbox" name="mentorship" id="mentorship">
-                                                <span class="slider round"></span>
-                                            </label>
-                                       </div>
-                                       <div class="box-link">
-                                            <span>New user near join in</span>
-                                            
-                                            <label class="switch float-right">
-                                                <input type="checkbox" name="mentorship" id="mentorship">
-                                                <span class="slider round"></span>
-                                            </label>
-                                       </div>
-                                       <div class="box-link">
-                                            <span>Messages</span>
-                                            
-                                            <label class="switch float-right">
-                                                <input type="checkbox" name="mentorship" id="mentorship">
-                                                <span class="slider round"></span>
-                                            </label>
-                                       </div>
-                                    </div>
-                                
-                                </div>
-                                <!-- end category -->
-                    
-                    
-                            <!-- category -->
-                            <div class="category">
-                                <div class="cat-title">
-                                    Show me on
-                                    <label class="switch float-right">
-                                        <input type="checkbox" name="creative-collaboration" id="creative-collaboration">
-                                        <span class="slider round"></span>
-                                    </label>
-                    
-                                </div>
-                                <div class="cat-body clearfix">
-                                    <span class="t-s-1">while turned off, you will not be shown in the card stack. You can still see and chat with your matches</span>
-                                </div>
-                    
-                            </div>
-                            <!-- end category -->
-                    
-                    
-                     
-                            <!-- category -->
-                            <div class="category">
-                                <div class="cat-title">
-                                    Language
-                    
-                                </div>
-                                <div class="cat-body clearfix">
-                                    <div class="c-select special" style="width:100%;">
-                                        <span class="label">Language</span>
-                                        <select>
-                                            <option value="0">English</option>
-                    
-                                        </select>
-                                    </div>
-                    
-                                </div>
-                    
-                            </div>
-                            <!-- end category -->
-                    
-                            <!-- category -->
-                            <div class="category">
-                                <div class="cat-title">
-                                    Contact us
-                    
-                                </div>
-                                <div class="cat-body clearfix">
-                                    <a href="#">Help & Support</a>
-                    
-                                </div>
-                    
-                            </div>
-                            <!-- end category -->
-                    
-                            <!-- category -->
-                            <div class="category">
-                                <div class="cat-title">
-                                    Account
-                    
-                                </div>
-                                <div class="cat-body clearfix">
-                                    <a href="#">Restore Purchases</a>
-                    
-                                </div>
-                    
-                            </div>
-                            <!-- end category -->
-                    
-                            <!-- category -->
-                            <div class="category">
-                                <div class="cat-title">
-                                    Legal
-                    
-                                </div>
-                                <div class="cat-body clearfix">
-                                    <ul class="nav flex-column">
-                                        <li class="nav-item clearfix">
-                                            <span>Privacy</span>
-                                            <span class="eye float-right text-blue">
-                                                <a href="#">
-                                                    <i class="far fa-eye f-s-18"></i>
+                                <div class="list-body">
+                                    <div class="list">
+                                        <div class="row">
+                                            <div class="col-3">
+                                                <div class="l-img">
+                                                    <img src="images/a4.jpg" alt="avatar" class="rounded-circle">
+                                                    <span class="online-indicator online"></span>
+                        
+                                                </div>
+                                            </div>
+                                            <div class="col-9">
+                                                <a class="list-info">
+                                                    <span class="l-name">Deharbish Barman</span>
+                                                    <span class="l-job">Digital Marketting Specialist</span>
+                                                    <span class="l-location">
+                                                        <i class="fa fa-map-marker-alt"></i>&nbsp;Los Angeles, CA</span>
+                        
                                                 </a>
-                                            </span>
-                                        </li>
-                                        <li class="nav-item">
-                                            <span> Terms and Condition</span>
-                                            <span class="eye float-right text-blue">
-                                                <a href="#">
-                                                    <i class="far fa-eye f-s-18"></i>
+                                                <span class="x-info">
+                                                    <a href="#" class="star f-s-18">
+                                                        <i class="fa fa-comment"></i>
+                                                    </a>
+                                                    <span class="pl-2"><i class="fa fa-ellipsis-v"></i></span>
+                        
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="list">
+                                        <div class="row">
+                                            <div class="col-3">
+                                                <div class="l-img">
+                                                    <img src="images/a1.jpg" alt="avatar" class="rounded-circle">
+                                                    <span class="online-indicator online"></span>
+                        
+                                                </div>
+                                            </div>
+                                            <div class="col-9">
+                                                <a class="list-info">
+                                                    <span class="l-name">Xander Von</span>
+                                                    <span class="l-job">Information Professional</span>
+                                                    <span class="l-location">
+                                                        <i class="fa fa-map-marker-alt"></i>&nbsp;Los Angeles, CA</span>
+                        
                                                 </a>
-                                            </span>
-                                        </li>
-                                        <li class="nav-item">
-                                            <span>Cookie Policy</span>
-                                            <span class="eye float-right text-blue">
-                                                <a href="#">
-                                                    <i class="far fa-eye f-s-18"></i>
+                                                <span class="x-info">
+                                                    <a href="#" class="star f-s-18">
+                                                        <i class="fa fa-comment"></i>
+                                                    </a>
+                                                    <span class="pl-2"><i class="fa fa-ellipsis-v"></i></span>
+                        
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="list">
+                                        <div class="row">
+                                            <div class="col-3">
+                                                <div class="l-img">
+                                                    <img src="images/a5.jpg" alt="avatar" class="rounded-circle">
+                                                    <span class="online-indicator offline"></span>
+                        
+                                                </div>
+                                            </div>
+                                            <div class="col-9">
+                                                <a class="list-info">
+                                                    <span class="l-name">Laura Smith</span>
+                                                    <span class="l-job">Global Human Resource Exe..</span>
+                                                    <span class="l-location">
+                                                        <i class="fa fa-map-marker-alt"></i>&nbsp;Los Angeles, CA</span>
+                        
                                                 </a>
-                                            </span>
-                                        </li>
-                                        <li class="nav-item">
-                                            <span>Safety Tips</span>
-                                            <span class="eye float-right text-blue">
-                                                <a href="#">
-                                                    <i class="far fa-eye f-s-18"></i>
+                                                <span class="x-info">
+                                                    <a href="#" class="star f-s-18">
+                                                        <i class="fa fa-comment"></i>
+                                                    </a>
+                                                    <span class="pl-2"><i class="fa fa-ellipsis-v"></i></span>
+                        
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="list">
+                                        <div class="row">
+                                            <div class="col-3">
+                                                <div class="l-img">
+                                                    <img src="images/a6.jpg" alt="avatar" class="rounded-circle">
+                                                    <span class="online-indicator offline"></span>
+                        
+                                                </div>
+                                            </div>
+                                            <div class="col-9">
+                                                <a class="list-info">
+                                                    <span class="l-name">Deharbish Barman</span>
+                                                    <span class="l-job">Digital Marketting Specialist</span>
+                                                    <span class="l-location">
+                                                        <i class="fa fa-map-marker-alt"></i>&nbsp;Los Angeles, CA</span>
+                        
                                                 </a>
-                                            </span>
-                                        </li>
-                                        <li class="nav-item">
-                                            <span>Community Guidelines</span>
-                                            <span class="eye float-right text-blue">
-                                                <a href="#">
-                                                    <i class="far fa-eye f-s-18"></i>
+                                                <span class="x-info">
+                                                    <a href="#" class="star f-s-18">
+                                                        <i class="fa fa-comment"></i>
+                                                    </a>
+                                                    <span class="pl-2"><i class="fa fa-ellipsis-v"></i></span>
+                        
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="list">
+                                        <div class="row">
+                                            <div class="col-3">
+                                                <div class="l-img">
+                                                    <img src="images/a7.jpg" alt="avatar" class="rounded-circle">
+                                                    <span class="online-indicator online"></span>
+                        
+                                                </div>
+                                            </div>
+                                            <div class="col-9">
+                                                <a class="list-info">
+                                                    <span class="l-name">Lukman Zahreef</span>
+                                                    <span class="l-job">Zen Trade M</span>
+                                                    <span class="l-location">
+                                                        <i class="fa fa-map-marker-alt"></i>&nbsp;Los Angeles, CA</span>
+                        
                                                 </a>
-                                            </span>
-                                        </li>
-                    
-                                    </ul>
-                    
+                                                <span class="x-info">
+                                                    <a href="#" class="star f-s-18">
+                                                        <i class="fa fa-comment"></i>
+                                                    </a>
+                                                    <span class="pl-2"><i class="fa fa-ellipsis-v"></i></span>
+                        
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="list">
+                                        <div class="row">
+                                            <div class="col-3">
+                                                <div class="l-img">
+                                                    <img src="images/a4.jpg" alt="avatar" class="rounded-circle">
+                                                    <span class="online-indicator online"></span>
+                        
+                                                </div>
+                                            </div>
+                                            <div class="col-9">
+                                                <a class="list-info">
+                                                    <span class="l-name">Deharbish Barman</span>
+                                                    <span class="l-job">Digital Marketting Specialist</span>
+                                                    <span class="l-location">
+                                                        <i class="fa fa-map-marker-alt"></i>&nbsp;Los Angeles, CA</span>
+                        
+                                                </a>
+                                                <span class="x-info">
+                                                    <a href="#" class="star f-s-18">
+                                                        <i class="fa fa-comment"></i>
+                                                    </a>
+                                                    <span class="pl-2"><i class="fa fa-ellipsis-v"></i></span>
+                        
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                        
                                 </div>
-                    
                             </div>
-                            <!-- end category -->
-                    
-                            <div class="category footer text-center mt-3">
-                                <div class="category-title text-center f-s-16">
-                                    Logo
-                                </div>
-                                <span>version 1.1</span>
-                                <br>
-                                <p>
-                    
-                                    <a class="btn btn-link f-s-12 text-light">
-                                        <i class="fa fa-trash"></i>&nbsp;Delete Account</a>
-                                </p>
-                            </div>
-                    
-                    
-                    
-                        </form>
+                        
+                        </div>
                     </div>
 
                     </div>
@@ -427,18 +336,18 @@
                 
                         <div class="container">
                             <!-- start row -->
-                            <div class="row" style="margin-top: 30px;">
+                            <div class="row row-msgn" >
                                 <div class="temp-wrapper">
                                     <div class="box user-card-component ">
  
                                         <div class="box-card shadow-lg connection" >
                                             <!-- CONNECTION AREA WRAPPER  -->
-                                            <div class="msg-wrapper">
+                                            <div class="msg-wrapper msgn">
                                                 <div class="row">
                                                     <!-- list area-->
-                                                   
+                                                    
                                                     <!-- chat area -->
-                                                    <div class="col-xl-8">
+                                                    <div class="col-xl-12">
                                                         <div class="chat-area">
                                                             <div class="chat-header">
                                                                 <div class="row">
@@ -471,7 +380,7 @@
                                                                                 <i class="fa fa-tag"></i>
                                                                             </a>
 
-                                                                            <span class="list-open text-secondary"><i class="fa fa-bars"></i></span>
+                                                                            <span class="text-secondary" id="toggle-switch-head"><i class="fa fa-bars"></i></span>
                                                                         </span>
                                                                       
                                                                     </div>
