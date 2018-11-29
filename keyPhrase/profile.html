@@ -379,9 +379,34 @@
                                                                             <div class="detail-type">
                                                                                 <span class="title text-light">My Goal</span>
                                                                                 <span class="val">Business</span>
-                                                                                <a href="#" class="btn btn-circle bg-white shadow float-right text-info edit-btn">
+                                                                                <a href="#" class="btn btn-circle bg-white shadow float-right text-info edit-btn" data-toggle="modal" data-target="#goalModal">
                                                                                     <i class="fa fa-edit"></i>
                                                                                 </a>
+                                                                                <div class="modal fade" id="goalModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                                                                                    <div class="modal-dialog" role="document">
+                                                                                        <div class="modal-content">
+                                                                                            <div class="modal-header">
+                                                                                                <h5 class="modal-title" id="exampleModalLongTitle">Choose Business Goals</h5>
+                                                                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                                                    <span aria-hidden="true">&times;</span>
+                                                                                                </button>
+                                                                                            </div>
+                                                                                            <div class="modal-body">
+                                                                                               <button class="btn btn-option btn-theme-light-line btn-rounded mb-2">Jobs</button>
+                                                                                               <button class="btn btn-option btn-theme-light-line btn-rounded mb-2">Make new friends</button>
+                                                                                               <button class="btn btn-option btn-theme-light-line btn-rounded mb-2">Get Inspired</button>
+                                                                                               <button class="btn btn-option btn-theme-light-line btn-rounded mb-2">Service & goods</button>
+                                                                                               <button class="btn btn-option btn-theme-light-line btn-rounded mb-2">Entrepreneurship</button>
+                                                                                               <button class="btn btn-option btn-theme-light-line btn-rounded mb-2">Mentorship</button>
+                                                                                            </div>
+                                                                                            <div class="modal-footer">
+                                                                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                                                                <button type="button" class="btn btn-primary">Save changes</button>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+
                                                                                
                                                                             
                                                                             </div>
@@ -402,9 +427,35 @@
                                                                         <div class="detail-type">
                                                                             <span class="title text-light">My Connection Idea</span>
                                                                             <span class="val">Your Connection Idea</span>
-                                                                                <a href="#" class="btn btn-circle bg-white shadow float-right text-info edit-btn">
+                                                                                <a href="#" class="btn btn-circle bg-white shadow float-right text-info edit-btn" data-toggle="modal" data-target="#connectionModal">
                                                                                     <i class="fa fa-edit"></i>
                                                                                 </a>
+                                                                                <div class="modal fade" id="connectionModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                                                                                    <div class="modal-dialog" role="document">
+                                                                                        <div class="modal-content">
+                                                                                            <div class="modal-header">
+                                                                                                <h5 class="modal-title" id="exampleModalLongTitle">Choose Connection Idea</h5>
+                                                                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                                                    <span aria-hidden="true">&times;</span>
+                                                                                                </button>
+                                                                                            </div>
+                                                                                            <div class="modal-body">
+                                                                                                <button class="btn btn-option btn-theme-light-line btn-rounded mb-2">Coffee</button>
+                                                                                                <button class="btn btn-option btn-theme-light-line btn-rounded mb-2">Phone Call</button>
+                                                                                                <button class="btn btn-option btn-theme-light-line btn-rounded mb-2">launch</button>
+                                                                                                <button class="btn btn-option btn-theme-light-line btn-rounded mb-2">Drink</button>
+                                                                                                <button class="btn btn-option btn-theme-light-line btn-rounded mb-2">Video Chat</button>
+                                                                                                <button class="btn btn-option btn-theme-light-line btn-rounded mb-2">Email</button>
+                                                                                                <button class="btn btn-option btn-theme-light-line btn-rounded mb-2">Dinner</button>
+                                                                                                <button class="btn btn-option btn-theme-light-line btn-rounded mb-2">Breakfast</button>
+                                                                                            </div>
+                                                                                            <div class="modal-footer">
+                                                                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                                                                <button type="button" class="btn btn-primary">Save changes</button>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
                                                             
                                                                         </div>
                                                                     </div>
@@ -454,30 +505,39 @@
                                             <!-- END PROFILE CONTENT -->
                                             <div class="foot-icon">
                                                 <div class="social-info">
-                                                    <div class="control-btn text-center">
-                                                        <button class="btn btn-circle bg-white shadow-none  text-theme social">
+                                                    <div class="control-btn text-center ">
+                                                        <span class="text-muted small">click icon to edit url</span><br>
+                                                        <button class="btn btn-circle bg-white shadow-none  text-theme social" name="linkedin">
                                                         
                                                         <i class="fab fa-linkedin"></i>
                                                         <!-- <img src="images/linkedin.png" alt="linkedin" class="img-responsive rounded-circle"> -->
                                                         </button>
-                                                        <button class="btn btn-circle bg-white shadow-none text-theme social">
+                                                        <button class="btn btn-circle bg-white shadow-none text-theme social" name="twitter">
                                                             <i class="fab fa-twitter"></i>
                                                             <!-- <img src="images/twitter.png" alt="linkedin" class="img-responsive rounded-circle"> -->
                                                         </button>
-                                                        <button class="btn btn-circle bg-white shadow-none text-theme social">
+                                                        <button class="btn btn-circle bg-white shadow-none text-theme social" name="facebook">
                                                             <i class="fab fa-facebook"></i>
                                                             <!-- <img src="images/facebook.png" alt="linkedin" class="img-responsive rounded-circle"> -->
                                                         </button>
-                                                        <button class="btn btn-circle bg-white shadow-none text-theme social">
+                                                        <button class="btn btn-circle bg-white shadow-none text-theme social" name="instagram">
                                                             <i class="fab fa-instagram"></i>
                                                             <!-- <img src="images/instagram.png" alt="linkedin" class="img-responsive rounded-circle"> -->
                                                         </button>
-                                                        <button class="btn btn-circle bg-white shadow-none text-theme social">
+                                                        <button class="btn btn-circle bg-white shadow-none text-theme social" name="website">
                                                             <i class="fa fa-globe"></i>
                                                             <!-- <img src="images/globe.png" alt="linkedin" class="img-responsive rounded-circle"> -->
-                                                        </button>
+                                                        </button> <br>
+                                                    </div>
+                                                    
+                                                    <div class="mx-auto url-edit px-3 py-2 shadow-sm text-center" style="width: 240px">
+
+                                                        <input type="url"  name="url-edit" id="urlform" class="w-100 small" >
+                                                        <a href="#" class="btn btn-link small">save</a> |
+                                                        <a class="btn btn-link text-danger small url-cancel">cancel</a>
                                                     </div>
                                                 </div>
+                                                
                                             </div>
                 
                                         </div>
@@ -587,6 +647,25 @@
             $('.detail').mouseout(function(){
                 $(this).find('a.edit-btn').hide();
             });
+
+
+            //.....................................
+            $('.social').click(function(){
+                var $socialType = $(this).attr('name');
+                var newPlaceHolder = "eg:"+$socialType+".com/loremipsum";
+                
+                $('.url-edit').find('input').attr('placeholder', newPlaceHolder);
+                $('.url-edit').show();
+            });
+
+            $('.url-cancel').click(function(){
+                $(this).parent().hide();
+            });
+
+            $('.btn-option').click(function(){
+                $(this).toggleClass('btn-theme-light-line btn-primary');
+            });
+
 
         });
     </script>
