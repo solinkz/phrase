@@ -91,7 +91,8 @@ main.main{
     max-width: 330px;
     height: 100vh;
     /* background: #f3f6fd; */
-    background: #ebf3ff;;
+    background: #fff;
+    /* background: #ebf3ff; */
     color: #0f2862;
     overflow-y: scroll;
     /* border-right: 2px solid #fff; */
@@ -199,6 +200,15 @@ li.search a{
     padding: 7px 28px 7px 24px ;
     font-size: 20px;
     text-transform: capitalize;
+}
+#sidebar .category .cat-box{
+  display: block;
+}
+
+.nmenu:hover{
+    box-shadow:  0 1rem 3rem rgba(0,0,0,.175)!important;
+    margin-left: 1.5rem !important;
+    margin-right: 1.5rem !important;
 }
 #sidebar .category .cat-body{
     background-color: #fff;
