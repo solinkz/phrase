@@ -117,6 +117,9 @@
 .set-items .select-selected, .set-items .select-items{
    font-size: 0.9rem;
 }
+.note-box .select-selected, .note-box .select-items{
+   font-size: 0.9rem;
+}
 .set-items span{
     font-size: 0.9rem;
 }
@@ -338,6 +341,7 @@
         top: 14px;
         display: block;
     }
+   
     .conn-list .small-option{
         display: none;
         position: absolute;
@@ -351,6 +355,24 @@
         -webkit-transform: rotate(90deg); 
         transform: rotate(90deg); */
         
+    }
+    .conn-list .main-option{
+        display: none;
+        /* position: absolute; */
+        right: -28px;
+        top: 1px;
+        background-color: #fff;
+        padding:10px 20px ;
+        border-radius: 50px;
+        box-shadow: 0 0 16px rgba(0, 0, 0, 0.158);
+       
+        
+    }
+
+    .conn-list a, .conn-list span{
+        font-size: 14px;
+        margin-right: 3px;
+        display: inline-block;
     }
     .small-option a, .small-option span{
         display: inline-block;
@@ -777,9 +799,12 @@
         right: 2rem;
         top: 22px;
     }
-    .conn-list .small-option, .conn-list .small-option-btn{
+ .conn-list .small-option-btn{
         display: none;
     }
+    /* .conn-list .small-option, .conn-list .small-option-btn{
+        display: none;
+    } */
     .holder{
         margin-left: -50px;
     }
