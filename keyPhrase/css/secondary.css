@@ -84,6 +84,68 @@
 
 
 /* ---------------------------------------------------
+    SETTINGS
+----------------------------------------------------- */
+
+.set-box ul.nav-tabs{
+    border: none;
+    
+}
+.set-box li a{
+    border: none;
+
+}
+.set-box a.active{
+    border: none;
+    border-bottom: 2px solid #4070e1 !important;
+
+
+}
+
+.set-items{
+    margin: 2rem 0.5rem;
+}
+
+.set-items label{
+    display: block;
+    font-size: 0.9rem;
+}
+.set-items input[type=range]{
+    display: block;
+    width: 100%;
+}
+.set-items .select-selected, .set-items .select-items{
+   font-size: 0.9rem;
+}
+.set-items span{
+    font-size: 0.9rem;
+}
+
+.note-box{
+    margin: 2rem 0.5rem;
+}
+
+.note-box p{
+    font-size: 0.9rem;
+}
+.note-box span{
+    font-size: 0.9rem;
+}
+
+.misc-box{
+    margin: 2rem 0.5rem;
+}
+
+.misc-box p{
+    font-size: 0.9rem;
+}
+.misc-box span{
+    font-size: 0.9rem;
+}
+
+
+
+/* ---------------------------------------------------
     ADD ON PAGE STYLE
 ----------------------------------------------------- */
 .addon-content{
