@@ -202,8 +202,13 @@
                                                     </div>
                                                 </div>
                                                 <div class="b-info">
-                                                    <span class="b-name">Gabriel Bryne</span><br>
-                                                    <span class="text-light b-loc"><i class="fa map-marker-alt"></i>Los Angeles, CA</span>
+                                                    <span class="b-name">Gabriel Bryne</span> &nbsp;<i class="fa fa-pencil-alt f-s-12"></i><br>
+                                                    <span class="text-light b-loc">Los Angeles, CA</span>
+                                                    <i class="fa fa-pencil-alt f-s-12"></i>
+                                                    <br>
+                                                    <span class="text-light b-loc">Short description sbout you</span>
+                                                    <i class="fa fa-pencil-alt f-s-12"></i>
+                                                    <br>
                                                 </div>
                                             </div>
                                             <div class="p-content">
@@ -466,36 +471,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="row">
-                                                    <div class="col">
-                                                        <div class="row">
-                                                            <div class="col-md-6">
-                                                                <div class="detail border-0 shadow-sm">
-                                                                    <div class="row">
-                                                                        <div class="col-2">
-                                                                            <span class="icon-container">
-                                                                                <button class="btn btn-lg btn-circle bg-white text-theme"><i class="fa fa-map-marker-alt"></i></button>
-                                                                            </span>
-                                                                        </div>
-                                                                        <div class="col-10">
-                                                                            <div class="detail-type">
-                                                                                <span class="title text-light">My Location</span>
-                                                                                <span class="val">Location</span>
-                                                                                <a href="#" class="btn btn-circle bg-white shadow float-right text-info edit-btn">
-                                                                                    <i class="fa fa-edit"></i>
-                                                                                </a>
-                                                                               
-                                                                            
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>                                                                                                                                    
-
-                                                                </div>
-                                                            </div>
-                                                            
-                                                        </div>
-                                                    </div>
-                                                </div>
+                                              
 
                                               
                                             
@@ -524,17 +500,22 @@
                                                             <i class="fab fa-instagram"></i>
                                                             <!-- <img src="images/instagram.png" alt="linkedin" class="img-responsive rounded-circle"> -->
                                                         </button>
+                                                        <button class="btn btn-circle bg-white shadow-none text-theme social" name="blog">
+                                                            <i class="fab fa-blogger-b"></i>
+                                                            <!-- <img src="images/instagram.png" alt="linkedin" class="img-responsive rounded-circle"> -->
+                                                        </button>
                                                         <button class="btn btn-circle bg-white shadow-none text-theme social" name="website">
                                                             <i class="fa fa-globe"></i>
                                                             <!-- <img src="images/globe.png" alt="linkedin" class="img-responsive rounded-circle"> -->
                                                         </button> <br>
                                                     </div>
                                                     
-                                                    <div class="mx-auto url-edit px-3 py-2 shadow-sm text-center" style="width: 240px">
+                                                    <div class="mx-auto url-edit px-3 py-2 shadow text-center" style="width: 240px">
 
-                                                        <input type="url"  name="url-edit" id="urlform" class="w-100 small" >
-                                                        <a href="#" class="btn btn-link small">save</a> |
-                                                        <a class="btn btn-link text-danger small url-cancel">cancel</a>
+                                                        <input type="url"  name="url-edit" id="urlform" class="w-100 f-s-14" >
+                                                        <a href="#" class="btn btn-link f-s-12">save</a>|
+                                                        <a class="btn btn-link text-danger f-s-12 url-cancel">cancel</a>|
+                                                        <a class="btn btn-link text-secondary f-s-12 url-disable">disable</a>
                                                     </div>
                                                 </div>
                                                 
@@ -660,6 +641,9 @@
 
             $('.url-cancel').click(function(){
                 $(this).parent().hide();
+            });
+            $('.url-disable').click(function(){
+                $(this).parent().remove();
             });
 
             $('.btn-option').click(function(){
