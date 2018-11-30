@@ -16,6 +16,13 @@
     box-shadow: 0 -8px 10px rgba(0, 0, 0, 0.5);
 }
 
+.mobile-header .bar1, .mobile-header .bar2, .mobile-header .bar3 {
+    width: 35px;
+    height: 2px;
+    background-color: #0f2862;
+    margin: 7px 0;
+    transition: 0.4s;
+}
 
 
 /*---------------------------------------
@@ -69,6 +76,11 @@
     background: #fff;
     box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
 }
+
+.mobile-footer .header-menu{
+    display: flex;
+    justify-content: space-around;
+}   
 
 #mobile .mobile-footer ul li a{
   padding:16px 6px;
