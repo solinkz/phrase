@@ -121,3 +121,12 @@ body{
     width: 100%;
 }
 
+
+/*---------------------------------------
+|  CONNECTION PAGE
+----------------------------------------*/
+#mobile .conn-list .small-option {
+    right: 3px;
+    top: 12px;
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.116);
+}
