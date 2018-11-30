@@ -1,7 +1,9 @@
 /*---------------------------------------
 | MOBILE INTERFACE STYLE
 ----------------------------------------*/
-
+body{
+    background-color: #fff;
+}
 
 /*---------------------------------------
 |  HEADER STYLE
@@ -52,9 +54,17 @@
 |  MAIN SECTION STYLE
 ----------------------------------------*/
 #mobile .main-section{
-    margin: 50px auto;
+    margin: 50px 0;
+    width: 100%;
 }
-
+#mobile .mobile-main{
+    margin-left: 0px;
+    padding: 0;
+}
+.f-container-mobile{
+    width: 100%;
+    text-align: center;
+}
 
 
 /*---------------------------------------
