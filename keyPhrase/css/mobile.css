@@ -59,6 +59,7 @@ body{
 }
 #mobile .mobile-main{
     margin-left: 0px;
+    margin-top: 10px;
     padding: 0;
 }
 .f-container-mobile{
@@ -104,4 +105,19 @@ body{
     display: inline-block;  
 }
 
+
+/*---------------------------------------
+|  MAIN PAGE
+----------------------------------------*/
+
+#mobile .box-card{
+    padding: 4rem 2rem;
+    width: 100%
+}
+#mobile .box-card .user-card{
+    width: 100%;
+}
+#mobile .box-card .user-card .img-cont{
+    width: 100%;
+}
 
