@@ -163,3 +163,27 @@ background:transparent;
     overflow-y: scroll;
     height: 61vh;
 }
+
+#mobile .chat-footer textarea {
+  
+    display: inline-block;
+    width: 85% !important;
+    padding: .5rem;
+    /* margin-bottom: -5px; */
+    resize: none;
+    height: 30px;
+  
+}
+
+.chat-header .options .dropleft .dropdown-toggle::before {
+    display: none;
+}
+
+.chat-header .options .dropdown-menu {
+    left: 0;
+    min-width: 4rem;
+}
+
+.chat-header .options .dropdown-item{
+    color: #0f2862;
+}
