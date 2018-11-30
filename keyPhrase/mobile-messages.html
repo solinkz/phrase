@@ -99,9 +99,9 @@
                                                                         <input type="search" name="search" id="search" class="font-italic" placeholder="search by name...">
                                                                     </div>
                                                                 </div>
-                                                                <!-- <span class="list-close">
-                                                                                                                                    <i class="fa fa-arrow-right"></i>
-                                                                                                                                </span> -->
+                                                                <span class="list-close">
+                                                                    <i class="fa fa-arrow-right"></i>
+                                                                </span>
                                                             </div>
                                                             <div class="list-body scroll">
                                                                 <div class="list">
@@ -303,21 +303,21 @@
                                                                         </a>
                                     
                                                                         <span class="options">
-                                                                            <a href="#" class="star f-s-16">
-                                                                                <i class="far fa-star"></i>
+                                                                            <a href="#" class="star">
+                                                                                <i class="far fa-star fa-lg"></i>
+                                                                            </a>
+                                                                            <a href="#" >
+                                                                                <i class="far fa-envelope fa-lg"></i>
                                                                             </a>
                                                                             <a href="#">
-                                                                                <i class="far fa-envelope"></i>
+                                                                                <i class="fa fa-trash fa-lg"></i>
                                                                             </a>
                                                                             <a href="#">
-                                                                                <i class="fa fa-trash"></i>
-                                                                            </a>
-                                                                            <a href="#">
-                                                                                <i class="fa fa-tag"></i>
+                                                                                <i class="fa fa-tag fa-lg"></i>
                                                                             </a>
                                     
                                                                             <span class="list-open text-secondary">
-                                                                                <i class="fa fa-bars"></i>
+                                                                                <i class="fa fa-bars fa-lg"></i>
                                                                             </span>
                                                                         </span>
                                     
@@ -544,69 +544,37 @@
         $(document).ready(function () {
 
            
-           
-
-
-            $('.range-slider').jRange({
-                from: 18,
-                to: 100,
-                step: 1,
-                scale: [18, 100],
-                format: '%s',
-                width: 300,
-                showLabels: true,
-                isRange: true
-            });
-
-            //  $('#toggle-switch').click(function() {
-            //         $(this).toggleClass("change"); 
-            //  });
-           
-
-           // -------------------------------------------------
-            // PROFILE DETAIL MOUSE OVER SCRIPT FOR TOOLTIP
+       // MESSAGE SCRIPT
             // ------------------------------------------------
 
-            $('.detail').mouseover(function () {
-                $(this).find('a.edit-btn').show();
-            });
-            $('.detail').mouseout(function () {
-                $(this).find('a.edit-btn').hide();
-            });
 
 
-            //.....................................
-            $('.social').click(function () {
-                var $socialType = $(this).attr('name');
-                var newPlaceHolder = "eg:" + $socialType + ".com/loremipsum";
-
-                $('.url-edit').find('input').attr('placeholder', newPlaceHolder);
-                $('.url-edit').show();
+            $('a.star').click(function () {
+                // $(this).toggleClass('starred'), 
+                $(this).children().toggleClass('far fa starred');
             });
 
-            $('.url-cancel').click(function () {
-                $(this).parent().hide();
+            $('.msg-search').click(function () {
+                $(this).next().fadeIn(300);
             });
-            $('.url-disable').click(function () {
-                $(this).parent().remove();
+            $('.search-close').click(function () {
+                $(this).parent().fadeOut(300);
             });
-
-            $('.btn-option').click(function () {
-                $(this).toggleClass('btn-theme-light-line btn-primary');
-            });
-
-
-            //...............................................
-            $('.desc-edit').click(function () {
-                $('.desc-txt').hide(),
-                    $('.desc').show();
-            });
-            $('.desc-save').click(function () {
-                $(this).parent().hide(),
-                    $('.desc-txt').show();
+            $('.list-open').click(function () {
+                $('.list-area').show(),
+                    $('.list-body').addClass('list-area-active'),
+                    $('.chat-area').addClass('chat-area-inactive');
 
             });
+            $('.list-close').click(function () {
+                $('.list-area').hide(),
+                    $('.list-body').removeClass('list-area-active'),
+                    $('.chat-area').removeClass('chat-area-inactive');
 
+            });
+           
+
+          
 
           
         });
