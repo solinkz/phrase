@@ -1,0 +1,85 @@
+/*---------------------------------------
+| MOBILE INTERFACE STYLE
+----------------------------------------*/
+
+
+/*---------------------------------------
+|  HEADER STYLE
+----------------------------------------*/
+
+#mobile .mobile-header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    box-shadow: 0 -8px 10px rgba(0, 0, 0, 0.5);
+}
+
+
+
+/*---------------------------------------
+|  SIDEBAR STYLE
+----------------------------------------*/
+
+#mobile #sidebar{
+    display: block;
+    overflow-x: hidden;
+    width: 0% ;
+    min-width: 0%;
+    max-width: 100%;
+    transition: 0.5s all;
+}
+
+ .sidebar-active{
+    width: 100%  !important;
+    min-width: 100% !important;
+    /* display: block !important; */
+}
+
+
+
+
+
+/*---------------------------------------
+|  MAIN SECTION STYLE
+----------------------------------------*/
+#mobile .main-section{
+    margin: 50px auto;
+}
+
+
+
+/*---------------------------------------
+|  FOOTER STYLE
+----------------------------------------*/
+
+#mobile .mobile-footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    
+}
+
+#mobile .mobile-footer .footer {
+    padding:0 24px;
+    height: 55px;
+    background: #fff;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#mobile .mobile-footer ul li a{
+  padding:16px 6px;
+  cursor: pointer;
+}
+
+
+
+#mobile .mobile-footer a.img{
+    padding-top: 7px;
+    display: inline-block;  
+}
+
+

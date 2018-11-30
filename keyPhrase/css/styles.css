@@ -1210,9 +1210,7 @@ button.side-social i{
 /* ---------------------------------------------------
     MEDIAQUERIES
 ----------------------------------------------------- */
-/* @media (min-width: 30px) {
-    
-} */
+
 
 @media (max-width: 660px){
     body{
@@ -1475,6 +1473,10 @@ button.side-social i{
     #sidebar{
         height: 100%;
     }
+
+    .web-v{
+        margin-left: 0 !important;
+    }
     /* .button-toggle{
        display: block;
    }
@@ -1506,9 +1508,14 @@ button.side-social i{
         font-size: 1rem;
     }
 
+   
    .user-component {
 
         margin: 0 1rem 0 .5rem;
+    }
+
+    .web-v{
+        margin-left: 176px;
     }
     .user-info{
         padding: 2rem 0.5rem 2rem 0.5rem;
