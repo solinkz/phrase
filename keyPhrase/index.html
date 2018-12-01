@@ -383,6 +383,10 @@
     <script>
         $(document).ready(function () {
 
+            if($('.box-card').hasClass('to-left')){
+                alert('to left');
+            }
+
             $('#toggle-switch').on('click', function () {
                 $('#sidebar').toggleClass('active').toggle();
                
