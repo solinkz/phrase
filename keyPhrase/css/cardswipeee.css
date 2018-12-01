@@ -179,3 +179,18 @@ body {
   cursor: -webkit-grab;
   cursor: grab;
 } */
+
+@media (min-width: 1024px) {
+  body{
+    overflow-y: scroll;
+  }
+  .demo, .demo__card, .demo__card-cont{
+    height: 70rem;
+    weight: 30rem;
+  }
+  .demo__content{
+    overflow-y: hidden;
+    height: 70rem;
+    width: 30rem;
+  }
+}
