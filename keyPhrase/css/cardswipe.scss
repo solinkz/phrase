@@ -1,30 +1,3 @@
-
-Skip to content
-
-    Pull requests
-    Issues
-    Marketplace
-    Explore
-
-    @solinkz
-
-0
-0
-
-    0
-
-solinkz/phrase
-Code
-Issues 0
-Pull requests 0
-Projects 0
-Wiki
-Insights
-Settings
-phrase/keyPhrase/css/cardswipe.css
-d829564 3 hours ago
-@solinkz solinkz new index test with swipe card
-188 lines (158 sloc) 3.14 KB
 *, *:before, *:after {
   box-sizing: border-box;
   margin: 0;
@@ -32,9 +5,10 @@ d829564 3 hours ago
 }
 
 html, body {
-  /* font-size: 62.5%; */
+  font-size: 62.5%;
 }
 body {
+  background: #63BDF7;
   overflow: hidden;
 }
 
@@ -61,36 +35,34 @@ $green: #B1DA96;
   position: absolute;
   left: 50%;
   top: 50%;
-  width: 30.6rem;
-  height: 80vh;
-  margin-left: 30.6rem/-2;
-  margin-top: 54rem/-2;
+  width: $w;
+  height: $h;
+  margin-left: $w/-2;
+  margin-top: $h/-2;
   background: #F6F6F5;
   box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.2);
-}
-
-  .demo__header {
-    height: 6rem;
+  
+  &__header {
+    height: $headerH;
     background: #002942;
   }
   
-  .demo__content {
-    overflow-x: hidden;
-    overflow-y: scroll;
+  &__content {
+    overflow: hidden;
     position: relative;
-    height: 80vh;
-    /* padding-top: 4.5rem; */
+    height: $h - $headerH;
+    padding-top: 4.5rem;
     user-select: none;
   }
   
-  .demo__card-cont {
+  &__card-cont {
     position: relative;
-    /* width: 24rem; */
-    height: 50vh;
+    width: $cardW;
+    height: $cardH;
     margin: 0 auto 5rem;
   }
   
-  .demo__card {
+  &__card {
     z-index: 2;
     position: absolute;
     left: 0;
@@ -98,68 +70,95 @@ $green: #B1DA96;
     width: 100%;
     height: 100%;
     transform-origin: 50% 100%;
-  }  
-    .reset {
+    
+    &.reset {
       transition: transform 0.3s;
       transform: translateX(0) !important;
-    }  
+      
       .demo__card__choice {
         transition: opacity 0.3s;
         opacity: 0 !important;;
       }
+    }
     
-    
-    .inactive {
+    &.inactive {
       transition: transform 0.3s;
     }
     
-    .to-left {
+    &.to-left {
       transform: translateX(-30rem) rotate(-30deg) !important;
     }
     
-    .to-right {
+    &.to-right {
       transform: translate(30rem) rotate(30deg) !important;
     }
     
-    .below {
+    &.below {
       z-index: 1;
     }
     
-   .demo__card__top {
-      height: 20.5rem;
+    &__top {
+      height: $cardTopH;
       padding-top: 4rem;
-   } 
-      .purple {
-        background: purple;
+      
+      &.purple {
+        background: $purple;
       }
-      .blue {
-        background: blue;
+      &.blue {
+        background: $blue;
       }
-      .indigo {
-        background: indigo;
+      &.indigo {
+        background: $indigo;
       }
-      .cyan {
-        background: cyan;
+      &.cyan {
+        background: $cyan;
       }
-      .lime {
-        background: lime;
+      &.lime {
+        background: $lime;
       }
-      .brown {
-        background: brown;
+      &.brown {
+        background: $brown;
       }
-
+    }
     
+    &__img {
+      overflow: hidden;
+      width: $imgSize;
+      height: $imgSize;
+      margin: 0 auto 1.5rem;
+      border-radius: 50%;
+      border: 0.5rem solid #ffffff;
+      background-image: url('//s3-us-west-2.amazonaws.com/s.cdpn.io/142996/profile/profile-512_5.jpg');
+      background-size: cover;
+    }
     
-  
-    .demo__card__choice {
+    &__name {
+      text-align: center;
+      font-size: 2rem;
+      font-weight: bold;
+      color: #fff;
+    }
+    
+    &__btm {
+      height: $cardBtmH;
+      background: #FFFFFF;
+    }
+    
+    &__we {
+      text-align: center;
+      font-size: 2.2rem;
+      line-height: $cardBtmH;
+    }
+    
+    &__choice {
       position: absolute;
       left: 0;
       top: 0;
-      /* width: 100%; */
-      /* height: 100%; */
+      width: 100%;
+      height: 100%;
       opacity: 0;
-    }
-      .demo__card__choice:before {
+      
+      &:before {
         content: "";
         position: absolute;
         left: 50%;
@@ -172,7 +171,7 @@ $green: #B1DA96;
         box-shadow: -2rem -3rem #fff, 2rem -3rem #fff;
       }
       
-      .demo__card__choice:after {
+      &:after {
         content: "";
         position: absolute;
         left: 50%;
@@ -186,30 +185,32 @@ $green: #B1DA96;
         border-top-right-radius: 1.5rem;
       }
       
-      .m--reject {
-        background: orange;
+      &.m--reject {
+        background: $orange;
       }
-      .m--like {
-        background: green;
-      }
-        :after {
+      &.m--like {
+        background: $green;
+        
+        &:after {
           transform: scaleY(-1);
         }
-      
-      
-      
-
+      }
+    }
     
-    /* .demo__card__drag {
-      z-index: -2;
+    &__drag {
+      z-index: 5;
       position: absolute;
       left: 0;
       top: 0;
       width: 100%;
       height: 100%;
       cursor: grab;
-    } */
+    }
+  }
+  
+  &__tip {
+    text-align: center;
+    font-size: 2.2rem;
+  }
+}
 
-
-
-   

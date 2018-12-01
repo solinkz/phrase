@@ -189,5 +189,19 @@ background:transparent;
 }
 
 /*---------------------------------------
-|  CARD SWIPE
+|  OWL
 ----------------------------------------*/
+.owl-dots{
+    text-align: center !important;
+}
+button.owl-dot {
+    background: rgba(0, 0, 0, 0.247) !important;
+    color: inherit;
+    width: 10px !important;
+    height: 10px !important;
+    border-radius: 10px;
+    margin : 0 3px !important;
+}
+.owl-dots  .active{
+    background: #0f2962 !important;
+}
