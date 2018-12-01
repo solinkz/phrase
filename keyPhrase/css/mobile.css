@@ -205,3 +205,11 @@ button.owl-dot {
 .owl-dots  .active{
     background: #0f2962 !important;
 }
+
+/*---------------------------------------
+|  MODAL ADDON
+----------------------------------------*/
+
+.feat-down .card-body span.text-center{
+    font-size: 12px;
+}
