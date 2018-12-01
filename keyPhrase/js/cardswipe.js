@@ -17,8 +17,8 @@
                     var opacity = pullDeltaX / 100;
                     var rejectOpacity = (opacity >= 0) ? 0 : Math.abs(opacity);
                     var likeOpacity = (opacity <= 0) ? 0 : opacity;
-                    $cardReject.css("opacity", rejectOpacity);
-                    $cardLike.css("opacity", likeOpacity);
+                    $cardReject.css("opacity", rejectOpacity).css("z-index",'1000');
+                    $cardLike.css("opacity", likeOpacity).css("z-index", '1000');
                 };
 
                 function release() {
